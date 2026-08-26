@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-heading: "Manrope", "Inter", system-ui, sans-serif;
+
+  --color-accent: #d4fc4f;
+  --color-accent-dim: #a8cf3a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-zinc-950 font-sans text-zinc-300 antialiased;
+}
+
+::selection {
+  @apply bg-accent text-zinc-950;
+}
+
+/* thin, dark scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-zinc-950;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-700 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-zinc-600;
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12;
+}
