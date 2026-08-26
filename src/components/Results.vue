@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const placeholders = Array.from({ length: 6 }, (_, i) => i + 1)
+import consultingPhoto from '../assets/consulting1.png'
+
+const placeholders = Array.from({ length: 5 }, (_, i) => i + 1)
 </script>
 
 <template>
@@ -11,11 +13,29 @@ const placeholders = Array.from({ length: 6 }, (_, i) => i + 1)
           Evolução de quem confiou no processo
         </h2>
         <p class="mt-4 text-zinc-400">
-          Galeria de evolução dos alunos. Fotos ilustrativas — em breve substituídas por casos reais.
+          Depoimentos e evolução real dos alunos da TNP.
         </p>
       </div>
 
-      <div class="mt-16 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
+      <div class="mt-16 grid gap-6 overflow-hidden rounded-3xl border border-white/10 bg-zinc-900/40 lg:grid-cols-2">
+        <div class="aspect-[4/5] w-full overflow-hidden lg:aspect-auto">
+          <img :src="consultingPhoto" alt="Aluno da TNP após a consultoria" class="h-full w-full object-cover" />
+        </div>
+        <div class="flex flex-col justify-center p-8 sm:p-12">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-accent" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.17 6A5.17 5.17 0 002 11.17V18h6.83v-6.83H4.83c0-1.29 1.05-2.34 2.34-2.34V6zm10 0A5.17 5.17 0 0012 11.17V18h6.83v-6.83h-4A2.34 2.34 0 0117.17 6V6z" />
+          </svg>
+          <p class="mt-4 font-heading text-xl leading-snug font-bold text-white sm:text-2xl">
+            Comecei a consultoria em maio desse ano e até aqui já ganhei 8kg de massa magra, o
+            Especialista Guilherme é fora da curva.
+          </p>
+          <p class="mt-6 text-sm font-semibold tracking-wide text-accent uppercase">
+            Aluno TNP — em acompanhamento desde maio
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-6 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-5">
         <div
           v-for="item in placeholders"
           :key="item"

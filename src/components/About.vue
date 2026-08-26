@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import personalPhoto from '../assets/personal1.jpeg'
+
 const highlights = [
   'Personal Trainer',
   'Treinador',
@@ -11,14 +13,8 @@ const highlights = [
   <section id="sobre" class="py-24 sm:py-32">
     <div class="container-page grid items-center gap-14 lg:grid-cols-2 lg:gap-16">
       <div class="relative mx-auto w-full max-w-md lg:order-2 lg:max-w-none">
-        <div class="aspect-[4/5] w-full overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-800 via-zinc-900 to-zinc-950">
-          <div class="flex h-full w-full flex-col items-center justify-center gap-3 text-zinc-600">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="8" r="4" />
-              <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
-            </svg>
-            <span class="px-6 text-center text-sm">Foto do treinador aqui</span>
-          </div>
+        <div class="aspect-[4/5] w-full overflow-hidden rounded-3xl border border-white/10">
+          <img :src="personalPhoto" alt="Guilherme Posanski, especialista da TNP" class="h-full w-full object-cover object-top" />
         </div>
       </div>
 

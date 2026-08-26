@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import logo from '../assets/logo.jpeg'
 import { getWhatsappLink } from '../config/site'
 
 const isOpen = ref(false)
@@ -23,10 +24,10 @@ function closeMenu() {
     <nav class="container-page flex h-16 items-center justify-between sm:h-20">
       <a
         href="#top"
-        class="font-heading text-lg font-extrabold tracking-tight text-white sm:text-xl"
+        class="flex items-center"
         @click="closeMenu"
       >
-        TNP <span class="text-accent">METHOD</span>
+        <img :src="logo" alt="TNP Method" class="h-11 w-11 rounded-full object-cover sm:h-12 sm:w-12" />
       </a>
 
       <ul class="hidden items-center gap-8 lg:flex">
