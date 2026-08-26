@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const highlights = [
   'Personal Trainer',
-  'Consultor Fitness',
+  'Treinador',
+  'Graduando em Nutrição',
   'Atendimento 100% online',
-  'Abordagem personalizada',
 ]
 </script>
 
@@ -17,7 +17,7 @@ const highlights = [
               <circle cx="12" cy="8" r="4" />
               <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
             </svg>
-            <span class="px-6 text-center text-sm">Foto do Guilherme aqui</span>
+            <span class="px-6 text-center text-sm">Foto do treinador aqui</span>
           </div>
         </div>
       </div>
@@ -25,12 +25,12 @@ const highlights = [
       <div class="lg:order-1">
         <p class="text-sm font-semibold tracking-widest text-accent uppercase">Sobre</p>
         <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Guilherme Posanski
+          TNP Method
         </h2>
         <p class="mt-6 text-lg leading-relaxed text-zinc-400">
-          Personal trainer e consultor fitness, com atendimento 100% online e uma abordagem
-          personalizada para cada aluno. O foco é entender sua realidade, sua rotina e seus
-          objetivos para construir um plano que realmente funcione para você.
+          A TNP existe para reduzir o improviso. Aumentar a clareza sobre o que fazer, por que
+          fazer e quando ajustar é o que transforma um plano em um processo de verdade —
+          conduzido por um profissional Personal Trainer, treinador e graduando em Nutrição.
         </p>
 
         <ul class="mt-8 grid grid-cols-2 gap-4">

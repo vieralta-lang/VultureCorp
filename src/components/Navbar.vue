@@ -9,6 +9,7 @@ const links = [
   { label: 'Serviços', href: '#servicos' },
   { label: 'Método', href: '#metodo' },
   { label: 'Resultados', href: '#resultados' },
+  { label: 'FAQ', href: '#faq' },
   { label: 'Contato', href: '#contato' },
 ]
 
@@ -25,7 +26,7 @@ function closeMenu() {
         class="font-heading text-lg font-extrabold tracking-tight text-white sm:text-xl"
         @click="closeMenu"
       >
-        GUILHERME <span class="text-accent">POSANSKI</span>
+        TNP <span class="text-accent">METHOD</span>
       </a>
 
       <ul class="hidden items-center gap-8 lg:flex">
@@ -43,7 +44,7 @@ function closeMenu() {
         :href="getWhatsappLink()"
         target="_blank"
         rel="noopener noreferrer"
-        class="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-zinc-950 transition-transform hover:scale-105 active:scale-95 lg:inline-block"
+        class="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition-transform hover:scale-105 active:scale-95 lg:inline-block"
       >
         Começar agora
       </a>
@@ -87,7 +88,7 @@ function closeMenu() {
           :href="getWhatsappLink()"
           target="_blank"
           rel="noopener noreferrer"
-          class="mt-4 block rounded-full bg-accent px-5 py-3.5 text-center text-sm font-bold text-zinc-950"
+          class="mt-4 block rounded-full bg-accent px-5 py-3.5 text-center text-sm font-bold text-white"
           @click="closeMenu"
         >
           Começar agora

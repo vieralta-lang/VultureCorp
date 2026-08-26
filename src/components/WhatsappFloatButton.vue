@@ -8,7 +8,7 @@ import { getWhatsappLink } from '../config/site'
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Falar no WhatsApp"
-    class="fixed right-5 bottom-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-zinc-950 shadow-lg shadow-accent/30 transition-transform hover:scale-110 active:scale-95 sm:right-8 sm:bottom-8"
+    class="fixed right-5 bottom-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-white shadow-lg shadow-accent/30 transition-transform hover:scale-110 active:scale-95 sm:right-8 sm:bottom-8"
   >
     <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-40" />
     <svg xmlns="http://www.w3.org/2000/svg" class="relative h-7 w-7" viewBox="0 0 24 24" fill="currentColor">

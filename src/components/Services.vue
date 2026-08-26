@@ -7,18 +7,18 @@ interface Service {
 
 const services: Service[] = [
   {
-    title: 'Treino Personalizado',
-    description: 'Programas de treino sob medida para o seu objetivo, rotina e nível de condicionamento.',
+    title: 'Treino Individualizado',
+    description: 'Planejado de acordo com objetivo, rotina, disponibilidade, nível e capacidade de recuperação.',
     icon: 'M13 10V3L4 14h7v7l9-11h-7z',
   },
   {
-    title: 'Consultoria de Nutrição',
-    description: 'Orientação nutricional alinhada à sua rotina, preferências e metas de performance.',
+    title: 'Estratégia Alimentar',
+    description: 'Construída para funcionar na vida real, com foco em aderência, composição corporal e performance.',
     icon: 'M12 3v18M5 8c0-2.8 3.1-5 7-5s7 2.2 7 5-3.1 5-7 5-7-2.2-7-5z',
   },
   {
     title: 'Plano Alimentar',
-    description: 'Cardápio estruturado e prático, pensado para se encaixar no seu dia a dia.',
+    description: 'Estratégia organizada com opções flexíveis de substituição para facilitar rotina, compras e aderência.',
     icon: 'M4 4h16v4a4 4 0 01-4 4H8a4 4 0 01-4-4V4zM8 12v8M16 12v8',
   },
   {
@@ -27,13 +27,13 @@ const services: Service[] = [
     icon: 'M12 2l3 3-3 3-3-3 3-3zM4 14a4 4 0 014-4h8a4 4 0 014 4v2a4 4 0 01-4 4H8a4 4 0 01-4-4v-2z',
   },
   {
-    title: 'Acompanhamento de Evolução',
-    description: 'Monitoramento contínuo de medidas, fotos e desempenho para acompanhar seu progresso.',
+    title: 'Acompanhamento e Ajustes',
+    description: 'O plano não fica parado: ele evolui conforme execução, feedbacks e resposta ao processo.',
     icon: 'M3 3v18h18M7 15l4-4 3 3 5-6',
   },
   {
-    title: 'Ajustes de Treino e Estratégia',
-    description: 'Revisões periódicas do plano para manter a evolução constante e evitar estagnação.',
+    title: 'Controle do Processo',
+    description: 'Feedbacks, execução e resposta prática orientam adaptações contínuas ao longo do acompanhamento.',
     icon: 'M12 4V2m0 20v-2m8-8h2M2 12h2m13.7-5.7l1.4-1.4M4.9 19.1l1.4-1.4M19.1 19.1l-1.4-1.4M4.9 4.9l1.4 1.4M12 8a4 4 0 100 8 4 4 0 000-8z',
   },
   {
@@ -53,7 +53,8 @@ const services: Service[] = [
           Tudo o que você precisa para evoluir
         </h2>
         <p class="mt-4 text-zinc-400">
-          Um acompanhamento completo, do treino ao prato, para garantir consistência e resultado.
+          Treino estruturado. Estratégia alimentar aplicável. Acompanhamento com ajustes reais ao
+          longo da rotina.
         </p>
       </div>
 

@@ -11,7 +11,7 @@ const year = new Date().getFullYear()
         <p class="font-heading text-lg font-extrabold text-white">
           {{ siteConfig.name }}
         </p>
-        <p class="text-sm text-zinc-500">Consultoria Fitness</p>
+        <p class="text-sm text-zinc-500">Assessoria Esportiva</p>
       </div>
 
       <div class="flex items-center gap-6">

@@ -10,7 +10,7 @@ import { getWhatsappLink } from '../config/site'
     <div class="container-page relative grid items-center gap-14 lg:grid-cols-2 lg:gap-10">
       <div class="flex flex-col items-start">
         <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-          Consultoria fitness online
+          Treino • Nutrição • Performance
         </span>
 
         <h1 class="font-heading text-4xl leading-[1.05] font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -19,7 +19,8 @@ import { getWhatsappLink } from '../config/site'
         </h1>
 
         <p class="mt-6 max-w-lg text-lg text-zinc-400">
-          Consultoria fitness personalizada para quem busca evolução, estratégia e resultados.
+          Treino estruturado. Estratégia alimentar aplicável. Acompanhamento com ajustes reais
+          ao longo da rotina.
         </p>
 
         <div class="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
@@ -27,7 +28,7 @@ import { getWhatsappLink } from '../config/site'
             :href="getWhatsappLink()"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-center text-sm font-bold tracking-wide text-zinc-950 uppercase transition-transform hover:scale-105 active:scale-95"
+            class="inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-center text-sm font-bold tracking-wide text-white uppercase transition-transform hover:scale-105 active:scale-95"
           >
             Começar minha transformação
           </a>
@@ -47,7 +48,7 @@ import { getWhatsappLink } from '../config/site'
               <circle cx="12" cy="8" r="4" />
               <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
             </svg>
-            <span class="px-6 text-center text-sm">Foto do Guilherme aqui</span>
+            <span class="px-6 text-center text-sm">Foto do treinador aqui</span>
           </div>
         </div>
         <div class="absolute -bottom-6 -left-6 hidden rounded-2xl border border-white/10 bg-zinc-900/90 px-6 py-4 backdrop-blur sm:block">

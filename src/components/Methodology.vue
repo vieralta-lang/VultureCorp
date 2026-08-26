@@ -8,23 +8,23 @@ interface Step {
 const steps: Step[] = [
   {
     number: '01',
-    title: 'Avaliação',
-    description: 'Entender objetivo, rotina, histórico e nível atual.',
+    title: 'Diagnóstico',
+    description: 'Objetivo, rotina, histórico, disponibilidade, limitações e prioridades do momento.',
   },
   {
     number: '02',
     title: 'Planejamento',
-    description: 'Criar estratégia personalizada de treino e nutrição.',
+    description: 'Organização técnica do treino, da estratégia alimentar e das diretrizes de execução.',
   },
   {
     number: '03',
-    title: 'Acompanhamento',
-    description: 'Monitorar evolução e realizar ajustes.',
+    title: 'Execução',
+    description: 'O aluno aplica o que foi proposto dentro da realidade da própria rotina.',
   },
   {
     number: '04',
-    title: 'Evolução',
-    description: 'Adaptar continuamente a estratégia de acordo com os resultados.',
+    title: 'Feedback + Ajustes',
+    description: 'Adesão, cansaço, dificuldades, viagens, dor e desempenho orientam a calibração da estratégia.',
   },
 ]
 </script>
@@ -35,10 +35,11 @@ const steps: Step[] = [
       <div class="mx-auto max-w-2xl text-center">
         <p class="text-sm font-semibold tracking-widest text-accent uppercase">Método</p>
         <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Como funciona
+          O acompanhamento acontece em ciclos
         </h2>
         <p class="mt-4 text-zinc-400">
-          Um processo simples e direto, pensado para gerar resultado real e sustentável.
+          O planejamento inicial é o ponto de partida — não uma peça engessada. A estratégia
+          evolui conforme a execução e a resposta do aluno.
         </p>
       </div>
 
