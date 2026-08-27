@@ -51,7 +51,7 @@ const pillars: Pillar[] = [
         <div
           v-for="pillar in pillars"
           :key="pillar.label"
-          class="rounded-2xl border border-white/10 bg-zinc-900/40 p-8"
+          class="pillar rounded-2xl border border-white/10 bg-zinc-900/40 p-8"
         >
           <p class="text-xs font-semibold tracking-widest text-accent uppercase">{{ pillar.label }}</p>
           <h3 class="mt-4 font-heading text-lg font-bold text-white">{{ pillar.title }}</h3>
@@ -65,3 +65,13 @@ const pillars: Pillar[] = [
     </div>
   </section>
 </template>
+
+<style scoped>
+.pillar {
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.pillar:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 35%, transparent);
+}
+</style>

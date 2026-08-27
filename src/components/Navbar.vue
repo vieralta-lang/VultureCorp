@@ -36,7 +36,7 @@ function closeMenu() {
         <li v-for="link in links" :key="link.href">
           <a
             :href="link.href"
-            class="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
+            class="nav-link text-sm font-medium text-zinc-400"
           >
             {{ link.label }}
           </a>
@@ -48,7 +48,7 @@ function closeMenu() {
         target="_blank"
         rel="noopener noreferrer"
         :title="siteConfig.whatsappDisplay"
-        class="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition-transform hover:scale-105 active:scale-95 lg:inline-block"
+        class="nav-cta hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white lg:inline-block"
       >
         Começar agora
       </a>
@@ -101,3 +101,22 @@ function closeMenu() {
     </Transition>
   </header>
 </template>
+
+<style scoped>
+.nav-link,
+.nav-cta {
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-cta:hover {
+  transform: scale(1.05);
+}
+
+.nav-cta:active {
+  transform: scale(0.95);
+}
+</style>

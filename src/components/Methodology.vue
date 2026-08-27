@@ -47,7 +47,7 @@ const steps: Step[] = [
         <div
           v-for="(step, index) in steps"
           :key="step.number"
-          class="relative rounded-2xl border border-white/10 bg-zinc-950 p-8"
+          class="method-step relative rounded-2xl border border-white/10 bg-zinc-950 p-8"
           :class="{ 'lg:border-accent/30': index === steps.length - 1 }"
         >
           <span class="font-heading text-5xl font-extrabold text-white/10">{{ step.number }}</span>
@@ -58,3 +58,9 @@ const steps: Step[] = [
     </div>
   </section>
 </template>
+
+<style scoped>
+.method-step {
+  transition: border-color 180ms ease;
+}
+</style>

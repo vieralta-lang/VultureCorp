@@ -39,9 +39,9 @@ const placeholders = Array.from({ length: 5 }, (_, i) => i + 1)
         <div
           v-for="item in placeholders"
           :key="item"
-          class="group aspect-square overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-zinc-800 to-zinc-950"
+          class="result-placeholder group aspect-square overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-zinc-800 to-zinc-950"
         >
-          <div class="flex h-full w-full flex-col items-center justify-center gap-2 text-zinc-600 transition-transform duration-300 group-hover:scale-105">
+          <div class="flex h-full w-full flex-col items-center justify-center gap-2 text-zinc-600">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
               <rect x="3" y="3" width="18" height="18" rx="2" />
               <circle cx="9" cy="9" r="2" />
@@ -54,3 +54,13 @@ const placeholders = Array.from({ length: 5 }, (_, i) => i + 1)
     </div>
   </section>
 </template>
+
+<style scoped>
+.result-placeholder {
+  transition: transform 300ms ease;
+}
+
+.result-placeholder:hover {
+  transform: scale(1.05);
+}
+</style>

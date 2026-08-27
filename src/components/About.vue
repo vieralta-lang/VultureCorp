@@ -13,7 +13,7 @@ const highlights = [
   <section id="sobre" class="py-24 sm:py-32">
     <div class="container-page grid items-center gap-14 lg:grid-cols-2 lg:gap-16">
       <div class="relative mx-auto w-full max-w-md lg:order-2 lg:max-w-none">
-        <div class="aspect-[4/5] w-full overflow-hidden rounded-3xl border border-white/10">
+        <div class="about-photo aspect-[4/5] w-full overflow-hidden rounded-3xl border border-white/10">
           <img :src="personalPhoto" alt="Guilherme Posanski, especialista da TNP" class="h-full w-full object-cover object-top" />
         </div>
       </div>
@@ -43,3 +43,9 @@ const highlights = [
     </div>
   </section>
 </template>
+
+<style scoped>
+.about-photo {
+  background: #18181b;
+}
+</style>

@@ -46,7 +46,7 @@ const faqs: QA[] = [
         <div
           v-for="item in faqs"
           :key="item.question"
-          class="rounded-2xl border border-white/10 bg-zinc-900/40 p-6 sm:p-8"
+          class="faq-item rounded-2xl border border-white/10 bg-zinc-900/40 p-6 sm:p-8"
         >
           <h3 class="font-heading text-base font-bold text-white sm:text-lg">{{ item.question }}</h3>
           <p class="mt-2 text-sm leading-relaxed text-zinc-400">{{ item.answer }}</p>
@@ -55,3 +55,13 @@ const faqs: QA[] = [
     </div>
   </section>
 </template>
+
+<style scoped>
+.faq-item {
+  transition: border-color 180ms ease;
+}
+
+.faq-item:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 35%, transparent);
+}
+</style>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import personalPhoto from '../assets/personal1.jpeg'
-import { getWhatsappLink, siteConfig } from '../config/site'
+import { getWhatsappLink } from '../config/site'
 </script>
 
 <template>
@@ -29,13 +29,13 @@ import { getWhatsappLink, siteConfig } from '../config/site'
             :href="getWhatsappLink()"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-center text-sm font-bold tracking-wide text-white uppercase transition-transform hover:scale-105 active:scale-95"
+            class="hero-cta inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-center text-sm font-bold tracking-wide text-white uppercase"
           >
             Começar minha transformação
           </a>
           <a
             href="#servicos"
-            class="inline-flex items-center justify-center rounded-full border border-white/15 px-8 py-4 text-center text-sm font-bold tracking-wide text-white uppercase transition-colors hover:bg-white/5"
+            class="hero-cta inline-flex items-center justify-center rounded-full border border-white/15 px-8 py-4 text-center text-sm font-bold tracking-wide text-white uppercase hover:bg-white/5"
           >
             Ver serviços
           </a>
@@ -54,3 +54,17 @@ import { getWhatsappLink, siteConfig } from '../config/site'
     </div>
   </section>
 </template>
+
+<style scoped>
+.hero-cta {
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.hero-cta:hover {
+  transform: scale(1.05);
+}
+
+.hero-cta:active {
+  transform: scale(0.95);
+}
+</style>

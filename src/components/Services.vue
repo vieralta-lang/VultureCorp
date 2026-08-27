@@ -62,7 +62,7 @@ const services: Service[] = [
         <article
           v-for="service in services"
           :key="service.title"
-          class="group rounded-2xl border border-white/10 bg-zinc-900/40 p-8 transition-colors hover:border-accent/40 hover:bg-zinc-900"
+          class="service-card group rounded-2xl border border-white/10 bg-zinc-900/40 p-8"
         >
           <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform group-hover:scale-110">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -76,3 +76,14 @@ const services: Service[] = [
     </div>
   </section>
 </template>
+
+<style scoped>
+.service-card {
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.service-card:hover {
+  border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+  background-color: #18181b;
+}
+</style>
