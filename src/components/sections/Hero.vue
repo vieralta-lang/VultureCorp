@@ -11,7 +11,7 @@ import { getWhatsappLink } from '../../config/site'
     <div class="container-page relative grid items-center gap-14 lg:grid-cols-2 lg:gap-10">
       <div class="flex flex-col items-start">
         <span class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent uppercase">
-          Treino • Nutrição • Performance
+          TNP Method
         </span>
 
         <h1 class="font-heading text-4xl leading-[1.05] font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -20,24 +20,18 @@ import { getWhatsappLink } from '../../config/site'
         </h1>
 
         <p class="mt-6 max-w-lg text-lg text-zinc-400">
-          Treino estruturado. Estratégia alimentar aplicável. Acompanhamento com ajustes reais
-          ao longo da rotina.
+          Avaliação, treino personalizado, plano nutricional e acompanhamento para evoluir com
+          estratégia.
         </p>
 
-        <div class="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
+        <div class="mt-10 flex w-full sm:w-auto">
           <a
             :href="getWhatsappLink()"
             target="_blank"
             rel="noopener noreferrer"
             class="hero-cta inline-flex items-center justify-center rounded-full bg-accent px-8 py-4 text-center text-sm font-bold tracking-wide text-white uppercase"
           >
-            Começar minha transformação
-          </a>
-          <a
-            href="#servicos"
-            class="hero-cta inline-flex items-center justify-center rounded-full border border-white/15 px-8 py-4 text-center text-sm font-bold tracking-wide text-white uppercase hover:bg-white/5"
-          >
-            Ver serviços
+            Começar minha avaliação →
           </a>
         </div>
       </div>

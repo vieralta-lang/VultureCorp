@@ -8,23 +8,23 @@ interface Step {
 const steps: Step[] = [
   {
     number: '01',
-    title: 'Diagnóstico',
-    description: 'Objetivo, rotina, histórico, disponibilidade, limitações e prioridades do momento.',
+    title: 'Avaliação',
+    description: 'Conte seus objetivos, rotina e características.',
   },
   {
     number: '02',
-    title: 'Planejamento',
-    description: 'Organização técnica do treino, da estratégia alimentar e das diretrizes de execução.',
+    title: 'Personalização',
+    description: 'Seu treino e plano nutricional são estruturados.',
   },
   {
     number: '03',
     title: 'Execução',
-    description: 'O aluno aplica o que foi proposto dentro da realidade da própria rotina.',
+    description: 'Siga seu planejamento dentro da sua rotina.',
   },
   {
     number: '04',
-    title: 'Feedback + Ajustes',
-    description: 'Adesão, cansaço, dificuldades, viagens, dor e desempenho orientam a calibração da estratégia.',
+    title: 'Evolução',
+    description: 'Acompanhe seus resultados e ajuste sua estratégia.',
   },
 ]
 </script>
@@ -33,13 +33,12 @@ const steps: Step[] = [
   <section id="metodo" class="border-y border-white/5 bg-zinc-900/30 py-24 sm:py-32">
     <div class="container-page">
       <div class="mx-auto max-w-2xl text-center">
-        <p class="text-sm font-semibold tracking-widest text-accent uppercase">Método</p>
+        <p class="text-sm font-semibold tracking-widest text-accent uppercase">Como funciona</p>
         <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          O acompanhamento acontece em ciclos
+          Um processo claro para evoluir
         </h2>
         <p class="mt-4 text-zinc-400">
-          O planejamento inicial é o ponto de partida — não uma peça engessada. A estratégia
-          evolui conforme a execução e a resposta do aluno.
+          Você começa pela avaliação; o método cuida da personalização, execução e evolução.
         </p>
       </div>
 

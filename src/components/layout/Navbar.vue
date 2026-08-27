@@ -6,11 +6,11 @@ import { getWhatsappLink, siteConfig } from '../../config/site'
 const isOpen = ref(false)
 
 const links = [
-  { label: 'Sobre', href: '#sobre' },
-  { label: 'Serviços', href: '#servicos' },
-  { label: 'Método', href: '#metodo' },
+  { label: 'Método', href: '#tnp' },
+  { label: 'Nutrição', href: '#nutricao' },
+  { label: 'Seu plano', href: '#plano' },
+  { label: 'Como funciona', href: '#metodo' },
   { label: 'Resultados', href: '#resultados' },
-  { label: 'FAQ', href: '#faq' },
   { label: 'Contato', href: '#contato' },
 ]
 
@@ -50,7 +50,7 @@ function closeMenu() {
         :title="siteConfig.whatsappDisplay"
         class="nav-cta hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white lg:inline-block"
       >
-        Começar agora
+        Começar minha avaliação
       </a>
 
       <button
