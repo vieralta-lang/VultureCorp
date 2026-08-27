@@ -44,7 +44,7 @@ const year = new Date().getFullYear()
       </div>
 
       <p class="text-xs text-zinc-600">
-        © {{ year }} {{ siteConfig.name }}. Todos os direitos reservados.
+        © {{ year }} {{ siteConfig.footerName }}. Todos os direitos reservados.
       </p>
     </div>
   </footer>

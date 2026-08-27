@@ -1,6 +1,7 @@
 // Dados centrais do site — troque aqui número de WhatsApp, Instagram e afins.
 export const siteConfig = {
   name: "TNP",
+  footerName: "Vulture Corp",
   fullName: "TNP Method",
   role: "Training • Nutrition • Performance",
   whatsappNumber: "5547999800963", // formato: 55 + DDD + número
