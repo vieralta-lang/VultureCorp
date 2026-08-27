@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import DeliveryCard from '../ui/DeliveryCard.vue'
+
 interface Item {
   label: string
   title: string
@@ -51,27 +53,16 @@ const items: Item[] = [
       </div>
 
       <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <div
+        <DeliveryCard
           v-for="item in items"
           :key="item.label"
-          class="delivery-item rounded-2xl border border-white/10 bg-zinc-950 p-8"
-        >
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path :d="item.icon" />
-            </svg>
-          </div>
-          <p class="mt-4 text-xs font-semibold tracking-widest text-accent uppercase">{{ item.label }}</p>
-          <h3 class="mt-1 font-heading text-lg font-bold text-white">{{ item.title }}</h3>
-          <p class="mt-2 text-sm leading-relaxed text-zinc-400">{{ item.description }}</p>
-        </div>
+          :number="item.label"
+          :title="item.title"
+          :description="item.description"
+          :icon="item.icon"
+        />
       </div>
     </div>
   </section>
 </template>
 
-<style scoped>
-.delivery-item {
-  transition: border-color 180ms ease, background-color 180ms ease;
-}
-</style>
