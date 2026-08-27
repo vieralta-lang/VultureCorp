@@ -13,12 +13,12 @@ const services: Service[] = [
   },
   {
     title: 'Estratégia Alimentar',
-    description: 'Construída para funcionar na vida real, com foco em aderência, composição corporal e performance.',
+    description: 'Construída para funcionar na vida real, com foco em aderência, composição corporal e performance. ',
     icon: 'M12 3v18M5 8c0-2.8 3.1-5 7-5s7 2.2 7 5-3.1 5-7 5-7-2.2-7-5z',
   },
   {
     title: 'Plano Alimentar',
-    description: 'Estratégia organizada com opções flexíveis de substituição para facilitar rotina, compras e aderência.',
+    description: 'Planos nutricionais desenvolvidos de acordo com seu objetivo, rotina e necessidades — utilizando como referência a Tabela Brasileira de Composição de Alimentos (TACO).',
     icon: 'M4 4h16v4a4 4 0 01-4 4H8a4 4 0 01-4-4V4zM8 12v8M16 12v8',
   },
   {

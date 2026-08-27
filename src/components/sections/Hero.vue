@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import personalPhoto from '../assets/personal1.jpeg'
-import { getWhatsappLink } from '../config/site'
+import personalPhoto from '../../assets/personal1.jpeg'
+import { getWhatsappLink } from '../../config/site'
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getWhatsappLink, siteConfig } from '../config/site'
+import { getWhatsappLink, siteConfig } from '../../config/site'
 
 const year = new Date().getFullYear()
 </script>

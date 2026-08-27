@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import logo from '../assets/logo.jpeg'
-import { getWhatsappLink, siteConfig } from '../config/site'
+import logo from '../../assets/logo.jpeg'
+import { getWhatsappLink, siteConfig } from '../../config/site'
 
 const isOpen = ref(false)
 

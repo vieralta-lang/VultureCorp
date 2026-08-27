@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import consultingPhoto from '../assets/consulting1.png'
+import consultingPhoto from '../../assets/consulting1.png'
 
 const placeholders = Array.from({ length: 5 }, (_, i) => i + 1)
 </script>
