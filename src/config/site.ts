@@ -4,6 +4,7 @@ export const siteConfig = {
   fullName: "TNP Method",
   role: "Training • Nutrition • Performance",
   whatsappNumber: "5547999800963", // formato: 55 + DDD + número
+  whatsappDisplay: "+55 47 99980-0963",
   whatsappMessage: "Olá, TNP! Quero começar minha consultoria fitness.",
   instagramHandle: "@tnpmethod",
   instagramUrl: "https://instagram.com/tnpmethod",

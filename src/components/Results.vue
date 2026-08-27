@@ -13,7 +13,7 @@ const placeholders = Array.from({ length: 5 }, (_, i) => i + 1)
           Evolução de quem confiou no processo
         </h2>
         <p class="mt-4 text-zinc-400">
-          Depoimentos e evolução real dos alunos da TNP.
+          Confira as experiências de alguns dos alunos da TNP.
         </p>
       </div>
 
@@ -30,7 +30,7 @@ const placeholders = Array.from({ length: 5 }, (_, i) => i + 1)
             Especialista Guilherme é fora da curva.
           </p>
           <p class="mt-6 text-sm font-semibold tracking-wide text-accent uppercase">
-            Aluno TNP — em acompanhamento desde maio
+            Felipe Vieira — em acompanhamento desde maio
           </p>
         </div>
       </div>

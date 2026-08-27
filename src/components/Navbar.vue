@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import logo from '../assets/logo.jpeg'
-import { getWhatsappLink } from '../config/site'
+import { getWhatsappLink, siteConfig } from '../config/site'
 
 const isOpen = ref(false)
 
@@ -27,7 +27,9 @@ function closeMenu() {
         class="flex items-center"
         @click="closeMenu"
       >
-        <img :src="logo" alt="TNP Method" class="h-11 w-11 rounded-full object-cover sm:h-12 sm:w-12" />
+        <span class="block h-12 w-12 overflow-hidden rounded-full sm:h-14 sm:w-14">
+          <img :src="logo" alt="TNP Method" class="h-full w-full scale-[1.8] object-cover object-top" />
+        </span>
       </a>
 
       <ul class="hidden items-center gap-8 lg:flex">
@@ -45,6 +47,7 @@ function closeMenu() {
         :href="getWhatsappLink()"
         target="_blank"
         rel="noopener noreferrer"
+        :title="siteConfig.whatsappDisplay"
         class="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white transition-transform hover:scale-105 active:scale-95 lg:inline-block"
       >
         Começar agora

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getWhatsappLink } from '../config/site'
+import { getWhatsappLink, siteConfig } from '../config/site'
 </script>
 
 <template>
@@ -19,6 +19,7 @@ import { getWhatsappLink } from '../config/site'
         :href="getWhatsappLink()"
         target="_blank"
         rel="noopener noreferrer"
+        :title="siteConfig.whatsappDisplay"
         class="mt-10 inline-flex items-center justify-center gap-3 rounded-full bg-accent px-10 py-5 text-sm font-bold tracking-wide text-white uppercase transition-transform hover:scale-105 active:scale-95"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">

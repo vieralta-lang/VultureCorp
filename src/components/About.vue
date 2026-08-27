@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import personalPhoto from '../assets/personal1.jpeg'
+import personalPhoto from '../assets/personal2.jpg'
 
 const highlights = [
   'Personal Trainer',

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getWhatsappLink } from '../config/site'
+import { getWhatsappLink, siteConfig } from '../config/site'
 </script>
 
 <template>
@@ -8,6 +8,7 @@ import { getWhatsappLink } from '../config/site'
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Falar no WhatsApp"
+    :title="siteConfig.whatsappDisplay"
     class="fixed right-5 bottom-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-white shadow-lg shadow-accent/30 transition-transform hover:scale-110 active:scale-95 sm:right-8 sm:bottom-8"
   >
     <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-40" />
