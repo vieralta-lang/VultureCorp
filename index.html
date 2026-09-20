@@ -1,37 +1,47 @@
-<!-- 1. Capturador de Erros Avançado (Pega falhas de módulos) -->
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TNP Method — Consultoria fitness online." />
+    <title>TNP Method | Consultoria Fitness</title>
+
     <script>
-      // Captura erros de Javascript padrão
-      window.onerror = function (message, source, lineno, colno, error) {
-        mostrarErro("JS Error: " + message + "\nLinha: " + lineno);
+      function mostrarTelaVermelha(mensagem, detalhes) {
+        console.error("ERRO CAPTURADO:", mensagem, detalhes);
+        var div = document.createElement('div');
+        div.style.cssText = 'position:fixed;top:0;left:0;z-index:999999;background:#990000;color:white;padding:20px;font-size:14px;width:100vw;min-height:100vh;word-wrap:break-word;overflow-y:auto;';
+        div.innerHTML = "<b>Erro:</b> " + mensagem + "<br><br><b>Detalhes:</b> " + (detalhes || 'N/A');
+        
+        var append = function() { document.body.appendChild(div); };
+        if (document.body) append();
+        else document.addEventListener("DOMContentLoaded", append);
+      }
+
+      window.onerror = function (msg, url, line, col, error) {
+        mostrarTelaVermelha(msg, "Linha: " + line + " | Arquivo: " + url);
+        return false; // permite que o erro vá pro console original
       };
 
-      // Captura erros de Promises não tratadas
-      window.addEventListener("unhandledrejection", function (event) {
-        var reason = event.reason ? (event.reason.message || event.reason) : 'Desconhecido';
-        mostrarErro("Promise Rejection: " + reason);
+      window.addEventListener("unhandledrejection", function (e) {
+        mostrarTelaVermelha("Promise Rejection", e.reason ? (e.reason.message || e.reason) : 'Desconhecido');
       });
 
-      // NOVO: Captura falhas de carregamento de scripts/módulos (Muito comum no Safari)
-      window.addEventListener('error', function(event) {
-        if (event.target && (event.target.tagName === 'SCRIPT' || event.target.tagName === 'LINK')) {
-          var file = event.target.src || event.target.href || 'desconhecido';
-          mostrarErro("Falha ao carregar arquivo de rede: " + file + "\nO Safari pode ter bloqueado ou abortado o download.");
+      window.addEventListener('error', function(e) {
+        if (e.target && (e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK')) {
+          mostrarTelaVermelha("Falha ao baixar arquivo", e.target.src || e.target.href);
         }
-      }, true); // O 'true' ativa a fase de captura, essencial para erros de tag DOM
-
-      // Função auxiliar para exibir a tela vermelha
-      function mostrarErro(mensagem) {
-        alert(mensagem);
-        var div = document.createElement('div');
-        div.style.cssText = 'position:fixed;top:0;left:0;z-index:99999;background:#990000;color:white;padding:20px;font-size:14px;width:100vw;min-height:100vh;word-wrap:break-word;';
-        div.innerText = mensagem;
-        
-        if (document.body) {
-          document.body.appendChild(div);
-        } else {
-          document.addEventListener("DOMContentLoaded", function() {
-            document.body.appendChild(div);
-          });
-        }
-      }
+      }, true);
     </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
