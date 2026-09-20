@@ -1,5 +1,10 @@
 # Vue 3 + TypeScript + Vite
 
-//como rodar o projeto
+npm run dev
+
+TODO
+revisar textos
+mais cases de sucesso
+
 
 
