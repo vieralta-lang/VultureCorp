@@ -6,6 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="TNP Method — Consultoria fitness online. Treino, nutrição e acompanhamento personalizado para sua transformação." />
     <title>TNP Method | Consultoria Fitness</title>
+
+    <!-- 1. Capturador de Erros (Sempre no topo do head) -->
+    <script>
+      window.onerror = function (message, source, lineno, colno, error) {
+        alert("Erro: " + message + "\nLinha: " + lineno);
+        
+        // Cria uma tela vermelha com o log
+        var div = document.createElement('div');
+        div.style.cssText = 'position:fixed;top:0;left:0;z-index:99999;background:#990000;color:white;padding:20px;font-size:14px;width:100vw;min-height:100vh;word-wrap:break-word;';
+        div.innerText = "Error: " + message + "\n\nStack: " + (error ? error.stack : 'N/A');
+        
+        // Garante que anexa o div (funciona antes ou depois do body existir)
+        if (document.body) {
+          document.body.appendChild(div);
+        } else {
+          document.addEventListener("DOMContentLoaded", function() {
+            document.body.appendChild(div);
+          });
+        }
+      };
+
+      // Captura erros assíncronos (falhas em requisições ou promises não tratadas)
+      window.addEventListener("unhandledrejection", function (event) {
+        var reason = event.reason ? (event.reason.message || event.reason) : 'Desconhecido';
+        alert("Promise Rejection: " + reason);
+      });
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,9 +43,11 @@
   </head>
   <body>
     <div id="app"></div>
+    
+    <!-- 2. Seu App Principal -->
     <script type="module" src="/src/main.ts"></script>
 
-    <!-- Script do Eruda para Debug -->
+    <!-- 3. Eruda para Debug -->
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
     <script>eruda.init();</script>
   </body>

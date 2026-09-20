@@ -19,13 +19,13 @@
         </div>
       </div>
 
-      <div class="nutrition-reference lg:col-span-2">
+      <!-- <div class="nutrition-reference lg:col-span-2">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
           <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" />
           <path d="M12 8v4l2.5 2.5" />
         </svg>
         <p>Base nutricional baseada na <strong>Tabela Brasileira de Composição de Alimentos (TACO)</strong>.</p>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
