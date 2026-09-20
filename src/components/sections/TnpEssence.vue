@@ -48,8 +48,6 @@ const pillars: Pillar[] = [
           <p class="mt-2 text-sm leading-relaxed text-zinc-400">{{ pillar.description }}</p>
         </div>
       </div>
-
-      <a href="#nutricao" class="method-link">Conheça a base nutricional →</a>
     </div>
   </section>
 </template>

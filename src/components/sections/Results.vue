@@ -26,8 +26,7 @@ const placeholders = Array.from({ length: 5 }, (_, i) => i + 1)
             <path d="M7.17 6A5.17 5.17 0 002 11.17V18h6.83v-6.83H4.83c0-1.29 1.05-2.34 2.34-2.34V6zm10 0A5.17 5.17 0 0012 11.17V18h6.83v-6.83h-4A2.34 2.34 0 0117.17 6V6z" />
           </svg>
           <p class="mt-4 font-heading text-xl leading-snug font-bold text-white sm:text-2xl">
-            Comecei a consultoria em maio desse ano e até aqui já ganhei 8kg de massa magra, o
-            Especialista Guilherme é fora da curva.
+            Comecei a consultoria em maio desse ano e até aqui já ganhei 8kg de massa magra, a disponibilidade e atenção do especialista são excepcionais.
           </p>
           <p class="mt-6 text-sm font-semibold tracking-wide text-accent uppercase">
             Felipe Vieira — em acompanhamento desde maio
@@ -36,7 +35,7 @@ const placeholders = Array.from({ length: 5 }, (_, i) => i + 1)
       </div>
 
       <div class="mt-6 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-5">
-        <div
+        <!-- <div
           v-for="item in placeholders"
           :key="item"
           class="result-placeholder group aspect-square overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-zinc-800 to-zinc-950"
@@ -49,7 +48,7 @@ const placeholders = Array.from({ length: 5 }, (_, i) => i + 1)
             </svg>
             <span class="text-xs">Foto em breve</span>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

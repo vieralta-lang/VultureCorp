@@ -37,3 +37,32 @@ body {
 @utility container-page {
   @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12;
 }
+
+/* 1. CSS Viewport Safe Utilities (Tailwind cross-browser height compatibility) */
+@utility h-screen-safe {
+  height: 100vh;
+  height: 100dvh;
+}
+@utility min-h-screen-safe {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* 2. CSS Flexbox Gap Fallbacks for Legacy Browsers (Safari < 14.1 e iOS < 14.5) */
+@supports not (gap: 1px) {
+  /* Row gaps */
+  .flex.gap-1 > * + *:not(template) { margin-left: 0.25rem; }
+  .flex.gap-2 > * + *:not(template) { margin-left: 0.5rem; }
+  .flex.gap-3 > * + *:not(template) { margin-left: 0.75rem; }
+  .flex.gap-4 > * + *:not(template) { margin-left: 1rem; }
+  .flex.gap-6 > * + *:not(template) { margin-left: 1.5rem; }
+  .flex.gap-8 > * + *:not(template) { margin-left: 2rem; }
+
+  /* Column gaps */
+  .flex-col.gap-1 > * + *:not(template) { margin-top: 0.25rem; margin-left: 0 !important; }
+  .flex-col.gap-2 > * + *:not(template) { margin-top: 0.5rem; margin-left: 0 !important; }
+  .flex-col.gap-3 > * + *:not(template) { margin-top: 0.75rem; margin-left: 0 !important; }
+  .flex-col.gap-4 > * + *:not(template) { margin-top: 1rem; margin-left: 0 !important; }
+  .flex-col.gap-6 > * + *:not(template) { margin-top: 1.5rem; margin-left: 0 !important; }
+  .flex-col.gap-8 > * + *:not(template) { margin-top: 2rem; margin-left: 0 !important; }
+}

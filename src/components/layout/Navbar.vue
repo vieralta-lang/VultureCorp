@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import logo from '../../assets/logo.jpeg'
+import logo from '../../assets/logo.jpg'
 import { getWhatsappLink, siteConfig } from '../../config/site'
 
 const isOpen = ref(false)
@@ -28,7 +28,7 @@ function closeMenu() {
         @click="closeMenu"
       >
         <span class="block h-12 w-12 overflow-hidden rounded-full sm:h-14 sm:w-14">
-          <img :src="logo" alt="TNP Method" class="h-full w-full scale-[1.8] object-cover object-top" />
+          <img :src="logo" alt="TNP Method" class="h-full w-full scale-[1.5] object-cover object-top" />
         </span>
       </a>
 

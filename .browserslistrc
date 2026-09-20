@@ -1,0 +1,9 @@
+# Browserslist target configuration for iOS 12+ and legacy/modern browsers
+> 0.2%
+defaults
+not dead
+safari >= 12
+ios_saf >= 12
+chrome >= 60
+firefox >= 60
+edge >= 79
