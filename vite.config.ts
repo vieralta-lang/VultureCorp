@@ -15,4 +15,8 @@ export default defineConfig({
       modernPolyfills: true,
     }),
   ],
+  build: {
+    // Desabilita modulePreload polêmico no Safari/WebKit que causa race conditions no carregamento frio
+    modulePreload: false,
+  },
 })
