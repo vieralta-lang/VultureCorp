@@ -8,8 +8,13 @@
     <title>TNP Method | Consultoria Fitness</title>
 
     <script>
+      function getTimestamp() {
+        var d = new Date();
+        return "[" + d.toTimeString().split(' ')[0] + "." + String(d.getMilliseconds()).padStart(3, '0') + "]";
+      }
+
       function mostrarTelaVermelha(mensagem, detalhes) {
-        console.error("ERRO CAPTURADO:", mensagem, detalhes);
+        console.error(getTimestamp() + " ERRO CAPTURADO:", mensagem, detalhes);
         var div = document.createElement('div');
         div.style.cssText = 'position:fixed;top:0;left:0;z-index:999999;background:#990000;color:white;padding:20px;font-size:14px;width:100vw;min-height:100vh;word-wrap:break-word;overflow-y:auto;';
         div.innerHTML = "<b>Erro:</b> " + mensagem + "<br><br><b>Detalhes:</b> " + (detalhes || 'N/A');
@@ -34,7 +39,7 @@
         }
       }, true);
 
-      console.log("[Etapa 1]: Scripts inline de monitoramento e global listeners inicializados.");
+      console.log(getTimestamp() + " [Etapa 1]: Scripts inline de monitoramento e global listeners inicializados.");
     </script>
 
     <!-- Eruda: Console móvel integrado para depuração no Safari/celulares -->
@@ -42,7 +47,7 @@
     <script>
       try {
         eruda.init();
-        console.log("[Eruda]: Inicializado com sucesso!");
+        console.log("[" + new Date().toTimeString().split(' ')[0] + "." + String(new Date().getMilliseconds()).padStart(3, '0') + "] [Eruda]: Inicializado com sucesso!");
       } catch (e) {
         console.error("[Eruda]: Falha ao inicializar", e);
       }
@@ -53,19 +58,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <script>console.log("[Etapa 2]: Body do HTML renderizando. Div #app declarada a seguir.");</script>
+    <script>
+      function getTimestamp() {
+        var d = new Date();
+        return "[" + d.toTimeString().split(' ')[0] + "." + String(d.getMilliseconds()).padStart(3, '0') + "]";
+      }
+      console.log(getTimestamp() + " [Etapa 2]: Body do HTML renderizando. Div #app declarada a seguir.");
+    </script>
     <div id="app"></div>
-    <script>console.log("[Etapa 3]: Div #app presente no DOM. Módulo principal src/main.ts será carregado.");</script>
+    <script>
+      console.log(getTimestamp() + " [Etapa 3]: Div #app presente no DOM. Módulo principal src/main.ts será carregado.");
+    </script>
     
     <script type="module" src="/src/main.ts"></script>
     <script>
       window.addEventListener('DOMContentLoaded', () => {
-        console.log("[Etapa 4 - DOMContentLoaded]: DOM completamente carregada e analisada.");
+        console.log(getTimestamp() + " [Etapa 4 - DOMContentLoaded]: DOM completamente carregada e analisada.");
         const appEl = document.getElementById('app');
-        console.log("             Estado atual da div #app no DOMContentLoaded:", appEl ? "Disponível (HTML: " + appEl.innerHTML + ")" : "NÃO disponível");
+        console.log("             " + getTimestamp() + " Estado atual da div #app no DOMContentLoaded:", appEl ? "Disponível (HTML: " + appEl.innerHTML + ")" : "NÃO disponível");
       });
       window.addEventListener('load', () => {
-        console.log("[Etapa 5 - Window Load]: Página e recursos externos totalmente carregados.");
+        console.log(getTimestamp() + " [Etapa 5 - Window Load]: Página e recursos externos totalmente carregados.");
       });
     </script>
   </body>

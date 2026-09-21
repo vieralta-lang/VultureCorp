@@ -14,10 +14,15 @@ import Results from './components/sections/Results.vue'
 import TnpEssence from './components/sections/TnpEssence.vue'
 import WhatsappFloatButton from './components/ui/WhatsappFloatButton.vue'
 
-console.log("[App.vue - Setup]: Script setup do componente raiz App.vue inicializado.")
+function getTimestamp() {
+  const d = new Date()
+  return `[${d.toTimeString().split(' ')[0]}.${String(d.getMilliseconds()).padStart(3, '0')}]`
+}
+
+console.log(`${getTimestamp()} [App.vue - Setup]: Script setup do componente raiz App.vue inicializado.`)
 
 onMounted(() => {
-  console.log("[App.vue - Mounted]: Componente raiz App.vue montado com sucesso no DOM!")
+  console.log(`${getTimestamp()} [App.vue - Mounted]: Componente raiz App.vue montado com sucesso no DOM!`)
 })
 </script>
 
