@@ -14,11 +14,6 @@ import Results from './components/sections/Results.vue'
 import TnpEssence from './components/sections/TnpEssence.vue'
 import WhatsappFloatButton from './components/ui/WhatsappFloatButton.vue'
 
-function getTimestamp() {
-  const d = new Date()
-  return `[${d.toTimeString().split(' ')[0]}.${String(d.getMilliseconds()).padStart(3, '0')}]`
-}
-
 
 onMounted(() => {
 })

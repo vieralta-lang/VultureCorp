@@ -8,13 +8,8 @@
     <title>TNP Method | Consultoria Fitness</title>
 
     <script>
-      function getTimestamp() {
-        var d = new Date();
-        return "[" + d.toTimeString().split(' ')[0] + "." + String(d.getMilliseconds()).padStart(3, '0') + "]";
-      }
 
       function mostrarTelaVermelha(mensagem, detalhes) {
-        console.error(getTimestamp() + " ERRO CAPTURADO:", mensagem, detalhes);
         var div = document.createElement('div');
         div.style.cssText = 'position:fixed;top:0;left:0;z-index:999999;background:#990000;color:white;padding:20px;font-size:14px;width:100vw;min-height:100vh;word-wrap:break-word;overflow-y:auto;';
         div.innerHTML = "<b>Erro:</b> " + mensagem + "<br><br><b>Detalhes:</b> " + (detalhes || 'N/A');
@@ -49,12 +44,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <script>
-      function getTimestamp() {
-        var d = new Date();
-        return "[" + d.toTimeString().split(' ')[0] + "." + String(d.getMilliseconds()).padStart(3, '0') + "]";
-      }
-    </script>
     <div id="app"></div>
     
     <script type="module" src="/src/main.ts"></script>
