@@ -19,10 +19,8 @@ function getTimestamp() {
   return `[${d.toTimeString().split(' ')[0]}.${String(d.getMilliseconds()).padStart(3, '0')}]`
 }
 
-console.log(`${getTimestamp()} [App.vue - Setup]: Script setup do componente raiz App.vue inicializado.`)
 
 onMounted(() => {
-  console.log(`${getTimestamp()} [App.vue - Mounted]: Componente raiz App.vue montado com sucesso no DOM!`)
 })
 </script>
 
