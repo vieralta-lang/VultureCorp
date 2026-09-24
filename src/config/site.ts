@@ -8,7 +8,7 @@ export const siteConfig = {
   whatsappDisplay: "+55 47 99980-0963",
   whatsappMessage: "Olá, TNP! Quero começar minha consultoria fitness.",
   instagramHandle: "@tnpmethod",
-  instagramUrl: "https://instagram.com/tnpmethod",
+  instagramUrl: "https://instagram.com/tnp_method",
 }
 
 export function getWhatsappLink(message: string = siteConfig.whatsappMessage) {
