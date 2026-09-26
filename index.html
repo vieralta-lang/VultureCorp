@@ -4,17 +4,62 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="TNP Method — Consultoria fitness online." />
+    <meta
+      name="description"
+      content="TNP Method — Consultoria fitness online."
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1094977616595175");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1094977616595175&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <title>TNP Method | Consultoria Fitness</title>
 
     <script>
-
       function mostrarTelaVermelha(mensagem, detalhes) {
-        var div = document.createElement('div');
-        div.style.cssText = 'position:fixed;top:0;left:0;z-index:999999;background:#990000;color:white;padding:20px;font-size:14px;width:100vw;min-height:100vh;word-wrap:break-word;overflow-y:auto;';
-        div.innerHTML = "<b>Erro:</b> " + mensagem + "<br><br><b>Detalhes:</b> " + (detalhes || 'N/A');
-        
-        var append = function() { document.body.appendChild(div); };
+        var div = document.createElement("div");
+        div.style.cssText =
+          "position:fixed;top:0;left:0;z-index:999999;background:#990000;color:white;padding:20px;font-size:14px;width:100vw;min-height:100vh;word-wrap:break-word;overflow-y:auto;";
+        div.innerHTML =
+          "<b>Erro:</b> " +
+          mensagem +
+          "<br><br><b>Detalhes:</b> " +
+          (detalhes || "N/A");
+
+        var append = function () {
+          document.body.appendChild(div);
+        };
         if (document.body) append();
         else document.addEventListener("DOMContentLoaded", append);
       }
@@ -25,34 +70,44 @@
       };
 
       window.addEventListener("unhandledrejection", function (e) {
-        mostrarTelaVermelha("Promise Rejection", e.reason ? (e.reason.message || e.reason) : 'Desconhecido');
+        mostrarTelaVermelha(
+          "Promise Rejection",
+          e.reason ? e.reason.message || e.reason : "Desconhecido",
+        );
       });
 
-      window.addEventListener('error', function(e) {
-        if (e.target && (e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK')) {
-          mostrarTelaVermelha("Falha ao baixar arquivo", e.target.src || e.target.href);
-        }
-      }, true);
-
+      window.addEventListener(
+        "error",
+        function (e) {
+          if (
+            e.target &&
+            (e.target.tagName === "SCRIPT" || e.target.tagName === "LINK")
+          ) {
+            mostrarTelaVermelha(
+              "Falha ao baixar arquivo",
+              e.target.src || e.target.href,
+            );
+          }
+        },
+        true,
+      );
     </script>
-
-    <!-- Eruda: Console móvel integrado para depuração no Safari/celulares -->
-    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="app"></div>
-    
+
     <script type="module" src="/src/main.ts"></script>
     <script>
-      window.addEventListener('DOMContentLoaded', () => {
-        const appEl = document.getElementById('app');
+      window.addEventListener("DOMContentLoaded", () => {
+        const appEl = document.getElementById("app");
       });
-      window.addEventListener('load', () => {
-      });
+      window.addEventListener("load", () => {});
     </script>
   </body>
 </html>
