@@ -1,17 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import logo from '../../assets/logo.jpg'
-import { getWhatsappLink, siteConfig } from '../../config/site'
+import logo from '../../assets/logo.webp'
+import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/site'
 
 const isOpen = ref(false)
 
 const links = [
-  { label: 'Método', href: '#tnp' },
-  { label: 'Nutrição', href: '#nutricao' },
-  { label: 'Seu plano', href: '#plano' },
-  { label: 'Como funciona', href: '#metodo' },
-  { label: 'Resultados', href: '#resultados' },
-  { label: 'Contato', href: '#contato' },
+  { label: 'Método', href: '#metodo' },
+  { label: 'Quem somos', href: '#sobre' },
+  { label: 'FAQ', href: '#faq' },
 ]
 
 function closeMenu() {
@@ -45,12 +42,13 @@ function closeMenu() {
 
       <a
         :href="getWhatsappLink()"
+        @click="trackWhatsappContact"
         target="_blank"
         rel="noopener noreferrer"
         :title="siteConfig.whatsappDisplay"
-        class="nav-cta hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white lg:inline-block"
+        class="nav-cta hidden bg-accent px-5 py-2.5 text-sm font-bold text-zinc-950 lg:inline-block"
       >
-        Começar minha avaliação
+        Entrar no jogo
       </a>
 
       <button
@@ -90,10 +88,10 @@ function closeMenu() {
         </ul>
         <a
           :href="getWhatsappLink()"
+          @click="trackWhatsappContact(); closeMenu()"
           target="_blank"
           rel="noopener noreferrer"
           class="mt-4 block rounded-full bg-accent px-5 py-3.5 text-center text-sm font-bold text-white"
-          @click="closeMenu"
         >
           Começar agora
         </a>

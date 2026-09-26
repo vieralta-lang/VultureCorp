@@ -8,18 +8,18 @@ interface Pillar {
 const pillars: Pillar[] = [
   {
     label: '01',
-    title: 'Treino',
-    description: 'Planejamento personalizado de acordo com o seu objetivo, rotina e recuperação.',
+    title: 'O problema não é você.',
+    description: 'É pagar por uma consultoria e esperar dias por um PDF genérico, sem direção quando surge uma dúvida no meio do treino.',
   },
   {
     label: '02',
-    title: 'Nutrição',
-    description: 'Plano alimentar personalizado, estruturado para funcionar na vida real.',
+    title: 'A motivação não espera.',
+    description: 'Quando o suporte demora 24 horas, a dúvida vira pausa, a motivação esfria e o resultado fica para depois.',
   },
   {
     label: '03',
-    title: 'Evolução',
-    description: 'Acompanhamento dos resultados e ajustes para manter sua estratégia em movimento.',
+    title: 'Nós não aceitamos descaso.',
+    description: 'Se você está disposto a fazer o trabalho duro, merece uma equipe na trincheira com você, com direção e acompanhamento de perto.',
   },
 ]
 </script>
@@ -28,12 +28,12 @@ const pillars: Pillar[] = [
   <section id="tnp" class="py-24 sm:py-32">
     <div class="container-page">
       <div class="mx-auto max-w-2xl text-center">
-        <p class="text-sm font-semibold tracking-widest text-accent uppercase">A TNP</p>
+        <p class="text-sm font-semibold tracking-widest text-accent uppercase">A mediocridade do mercado fitness</p>
         <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Três pilares. Um único método.
+          O sistema te abandona. O TNP Method não.
         </h2>
         <p class="mt-4 text-zinc-400">
-          Treino, nutrição e evolução trabalham juntos dentro de uma estratégia feita para você.
+          Alta disponibilidade, obsessão pelo processo e excelência no básico. Nós não vendemos atalhos: entregamos direção exata para você executar.
         </p>
       </div>
 

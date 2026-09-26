@@ -10,7 +10,7 @@
           Você acompanha o que importa para executar bem: metas nutricionais, treino, refeições e
           evolução do processo.
         </p>
-        <a :href="getWhatsappLink()" target="_blank" rel="noopener noreferrer" class="plan-cta">
+        <a :href="getWhatsappLink()" @click="trackWhatsappContact" target="_blank" rel="noopener noreferrer" class="plan-cta">
           Começar minha avaliação →
         </a>
       </div>
@@ -55,7 +55,7 @@
 </template>
 
 <script setup lang="ts">
-import { getWhatsappLink } from '../../config/site'
+import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
 
 const macros = [
   { label: 'Calorias', value: '2.840 kcal' },

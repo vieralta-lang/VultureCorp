@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-heading: "Manrope", "Inter", system-ui, sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+  --font-heading: "Barlow Condensed", "DM Sans", sans-serif;
 
-  --color-accent: #8b5cf6;
-  --color-accent-dim: #6d28d9;
+  --color-accent: #c084fc;
+  --color-accent-dim: #a855f7;
 }
 
 html {
@@ -14,10 +14,18 @@ html {
 
 body {
   @apply bg-zinc-950 font-sans text-zinc-300 antialiased;
+  background-image: linear-gradient(rgb(255 255 255 / 2%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 2%) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
 ::selection {
-  @apply bg-accent text-white;
+  @apply bg-accent text-zinc-950;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }
 
 /* thin, dark scrollbar */

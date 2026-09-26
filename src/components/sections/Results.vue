@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import consultingPhoto from '../../assets/consulting1.png'
+import consultingPhoto from '../../assets/consulting1.webp'
 
 </script>
 
@@ -18,7 +18,7 @@ import consultingPhoto from '../../assets/consulting1.png'
 
       <div class="mt-16 grid gap-6 overflow-hidden rounded-3xl border border-white/10 bg-zinc-900/40 lg:grid-cols-2">
         <div class="aspect-[4/5] w-full overflow-hidden lg:aspect-auto">
-          <img :src="consultingPhoto" alt="Aluno da TNP após a consultoria" class="h-full w-full object-cover" />
+          <img :src="consultingPhoto" alt="Aluno da TNP após a consultoria" loading="lazy" decoding="async" class="h-full w-full object-cover" />
         </div>
         <div class="flex flex-col justify-center p-8 sm:p-12">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-accent" viewBox="0 0 24 24" fill="currentColor">

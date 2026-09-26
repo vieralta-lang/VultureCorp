@@ -8,23 +8,23 @@ interface Step {
 const steps: Step[] = [
   {
     number: '01',
-    title: 'Avaliação',
-    description: 'Conte seus objetivos, rotina e características.',
+    title: 'Ataque imediato',
+    description: 'Seu treino de musculação e sua dieta ficam prontos no primeiro atendimento. Zero espera.',
   },
   {
     number: '02',
-    title: 'Personalização',
-    description: 'Seu treino e plano nutricional são estruturados.',
+    title: 'Alta disponibilidade',
+    description: 'Dúvidas sobre execução ou alimentação? Nosso suporte responde rápido e acompanha você de perto.',
   },
   {
     number: '03',
-    title: 'Execução',
-    description: 'Siga seu planejamento dentro da sua rotina.',
+    title: 'Treino e nutrição letais',
+    description: 'Musculação periodizada para hipertrofia e força, com alimentação pensada para sua performance.',
   },
   {
     number: '04',
-    title: 'Evolução',
-    description: 'Acompanhe seus resultados e ajuste sua estratégia.',
+    title: 'Mentalidade inabalável',
+    description: 'Acompanhamos sua evolução e puxamos você para cima quando a motivação tentar falhar.',
   },
 ]
 </script>
@@ -33,12 +33,12 @@ const steps: Step[] = [
   <section id="metodo" class="border-y border-white/5 bg-zinc-900/30 py-24 sm:py-32">
     <div class="container-page">
       <div class="mx-auto max-w-2xl text-center">
-        <p class="text-sm font-semibold tracking-widest text-accent uppercase">Como funciona</p>
+        <p class="text-sm font-semibold tracking-widest text-accent uppercase">TNP Method</p>
         <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Um processo claro para evoluir
+          Training. Nutrition. Performance.
         </h2>
         <p class="mt-4 text-zinc-400">
-          Você começa pela avaliação; o método cuida da personalização, execução e evolução.
+          Inspirados pela Mamba Negra: obsessão pelo processo, disciplina e excelência no básico. O seu resultado é o nosso troféu.
         </p>
       </div>
 

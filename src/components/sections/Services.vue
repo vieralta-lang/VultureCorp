@@ -1,76 +1,86 @@
 <script setup lang="ts">
-interface Service {
+interface Plan {
   title: string
+  period: string
   description: string
-  icon: string
+  features: string[]
+  message: string
+  recommended?: boolean
 }
 
-const services: Service[] = [
+const plans: Plan[] = [
   {
-    title: 'Treino Individualizado',
-    description: 'Planejado de acordo com objetivo, rotina, disponibilidade, nível e capacidade de recuperação.',
-    icon: 'M13 10V3L4 14h7v7l9-11h-7z',
+    title: 'Elite Mamba',
+    period: 'Mensal',
+    description: 'O ponto de partida para quem quer testar o sangue frio.',
+    features: [
+      'Dieta e treino de musculação no primeiro atendimento',
+      'Suporte de alta disponibilidade pelo WhatsApp',
+      'Acompanhamento próximo e ajustes rápidos',
+    ],
+    message: 'Olá, TNP! Quero começar pelo plano Elite Mamba mensal.',
   },
   {
-    title: 'Estratégia Alimentar',
-    description: 'Construída para funcionar na vida real, com foco em aderência, composição corporal e performance. ',
-    icon: 'M12 3v18M5 8c0-2.8 3.1-5 7-5s7 2.2 7 5-3.1 5-7 5-7-2.2-7-5z',
-  },
-  {
-    title: 'Plano Alimentar',
-    description: 'Planos nutricionais desenvolvidos de acordo com seu objetivo, rotina e necessidades — utilizando como referência a Tabela Brasileira de Composição de Alimentos (TACO).',
-    icon: 'M4 4h16v4a4 4 0 01-4 4H8a4 4 0 01-4-4V4zM8 12v8M16 12v8',
-  },
-  {
-    title: 'Suplementação',
-    description: 'Orientações sobre uso estratégico de suplementos para potencializar resultados.',
-    icon: 'M12 2l3 3-3 3-3-3 3-3zM4 14a4 4 0 014-4h8a4 4 0 014 4v2a4 4 0 01-4 4H8a4 4 0 01-4-4v-2z',
-  },
-  {
-    title: 'Acompanhamento e Ajustes',
-    description: 'O plano não fica parado: ele evolui conforme execução, feedbacks e resposta ao processo.',
-    icon: 'M3 3v18h18M7 15l4-4 3 3 5-6',
-  },
-  {
-    title: 'Controle do Processo',
-    description: 'Feedbacks, execução e resposta prática orientam adaptações contínuas ao longo do acompanhamento.',
-    icon: 'M12 4V2m0 20v-2m8-8h2M2 12h2m13.7-5.7l1.4-1.4M4.9 19.1l1.4-1.4M19.1 19.1l-1.4-1.4M4.9 4.9l1.4 1.4M12 8a4 4 0 100 8 4 4 0 000-8z',
-  },
-  {
-    title: 'Orientação sobre Hormonização',
-    description: 'Direcionamento responsável dentro dos limites profissionais e legais, sempre priorizando saúde e segurança.',
-    icon: 'M12 22s8-4.5 8-11.3V5l-8-3-8 3v5.7C4 17.5 12 22 12 22z',
+    title: 'Mamba Mentality',
+    period: 'Trimestral',
+    description: 'Para quem entendeu que a constância é o que muda o jogo.',
+    features: [
+      'Dieta e treino de musculação no primeiro atendimento',
+      'Suporte VIP de alta disponibilidade',
+      'Acompanhamento lado a lado e incentivo contínuo',
+      'Renovação completa da periodização',
+    ],
+    message: 'Olá, TNP! Quero assumir o compromisso com o plano Mamba Mentality trimestral.',
+    recommended: true,
   },
 ]
+
+import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
 </script>
 
 <template>
-  <section id="servicos" class="py-24 sm:py-32">
+  <section id="planos" class="border-y border-white/10 bg-zinc-900/40 py-24 sm:py-32">
     <div class="container-page">
       <div class="mx-auto max-w-2xl text-center">
-        <p class="text-sm font-semibold tracking-widest text-accent uppercase">Serviços</p>
-        <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Tudo o que você precisa para evoluir
+        <p class="text-sm font-semibold tracking-widest text-accent uppercase">O preço do sucesso</p>
+        <h2 class="mt-3 font-heading text-4xl font-extrabold uppercase text-white sm:text-5xl">
+          Escolha como entrar no jogo.
         </h2>
         <p class="mt-4 text-zinc-400">
-          Treino estruturado. Estratégia alimentar aplicável. Acompanhamento com ajustes reais ao
-          longo da rotina.
+          Dois caminhos, a mesma direção. Consulte o investimento direto com nossa equipe.
         </p>
       </div>
 
-      <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mx-auto mt-14 grid max-w-5xl gap-5 md:grid-cols-2">
         <article
-          v-for="service in services"
-          :key="service.title"
-          class="service-card group rounded-2xl border border-white/10 bg-zinc-900/40 p-8"
+          v-for="plan in plans"
+          :key="plan.title"
+          class="service-card relative flex flex-col border p-6 sm:p-8"
+          :class="plan.recommended ? 'border-accent bg-zinc-950' : 'border-white/15 bg-zinc-950/60'"
         >
-          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-transform group-hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path :d="service.icon" />
-            </svg>
-          </div>
-          <h3 class="mt-6 font-heading text-lg font-bold text-white">{{ service.title }}</h3>
-          <p class="mt-2 text-sm leading-relaxed text-zinc-400">{{ service.description }}</p>
+          <span v-if="plan.recommended" class="absolute right-0 top-0 bg-accent px-3 py-1 text-xs font-bold tracking-wider text-zinc-950 uppercase">
+            Recomendado
+          </span>
+          <p class="text-xs font-bold tracking-[0.16em] text-accent uppercase">{{ plan.period }}</p>
+          <h3 class="mt-3 font-heading text-3xl font-extrabold uppercase text-white">{{ plan.title }}</h3>
+          <p class="mt-2 min-h-12 text-sm leading-relaxed text-zinc-400">{{ plan.description }}</p>
+          <ul class="mt-6 flex-1 space-y-4 border-t border-white/10 pt-6">
+            <li v-for="feature in plan.features" :key="feature" class="flex gap-3 text-sm leading-relaxed text-zinc-200">
+              <span class="mt-0.5 text-accent" aria-hidden="true">+</span>
+              {{ feature }}
+            </li>
+          </ul>
+          <p class="mt-7 text-xs text-zinc-500">Investimento informado pelo WhatsApp</p>
+          <a
+            :href="getWhatsappLink(plan.message)"
+            @click="trackWhatsappContact"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-3 inline-flex min-h-12 items-center justify-center px-5 py-3 text-center text-sm font-extrabold tracking-wide uppercase transition-colors"
+            :class="plan.recommended ? 'bg-accent text-zinc-950 hover:bg-accent-dim' : 'border border-accent text-accent hover:bg-accent hover:text-zinc-950'"
+          >
+            {{ plan.recommended ? 'Assumir o compromisso' : 'Começar agora' }}
+          </a>
         </article>
       </div>
     </div>
@@ -83,7 +93,6 @@ const services: Service[] = [
 }
 
 .service-card:hover {
-  border-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
-  background-color: #18181b;
+  border-color: color-mix(in srgb, var(--color-accent) 70%, transparent);
 }
 </style>

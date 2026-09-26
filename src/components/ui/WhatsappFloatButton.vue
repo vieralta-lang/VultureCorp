@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { getWhatsappLink, siteConfig } from '../../config/site'
+import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/site'
 </script>
 
 <template>
   <a
     :href="getWhatsappLink()"
+    @click="trackWhatsappContact"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Falar no WhatsApp"

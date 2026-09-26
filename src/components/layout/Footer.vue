@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getWhatsappLink, siteConfig } from '../../config/site'
+import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/site'
 
 const year = new Date().getFullYear()
 </script>
@@ -31,6 +31,7 @@ const year = new Date().getFullYear()
         </a>
         <a
           :href="getWhatsappLink()"
+          @click="trackWhatsappContact"
           target="_blank"
           rel="noopener noreferrer"
           :title="siteConfig.whatsappDisplay"
