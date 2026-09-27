@@ -40,17 +40,6 @@ function closeMenu() {
         </li>
       </ul>
 
-      <a
-        :href="getWhatsappLink()"
-        @click="trackWhatsappContact"
-        target="_blank"
-        rel="noopener noreferrer"
-        :title="siteConfig.whatsappDisplay"
-        class="button-primary nav-cta hidden px-5 py-2.5 text-sm lg:inline-flex"
-      >
-        Entrar no jogo
-      </a>
-
       <button
         type="button"
         aria-label="Abrir menu"
