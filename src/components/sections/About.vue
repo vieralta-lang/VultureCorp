@@ -6,6 +6,7 @@ const highlights = [
   'Treino',
   'Feedback rápido',
   'Atendimento 100% online',
+  'Atendemos todos os públicos'
 ]
 </script>
 

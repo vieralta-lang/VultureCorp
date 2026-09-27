@@ -4,19 +4,16 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
 </script>
 
 <template>
-  <section id="top" class="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28 lg:pt-44">
+  <section id="top" class="relative overflow-hidden pt-24 pb-20 sm:pt-28 sm:pb-28 lg:pt-36">
     <div class="container-page relative grid items-center gap-14 lg:grid-cols-2 lg:gap-10">
       <div class="flex flex-col items-start">
         <span class="mb-6 inline-flex items-center gap-2 border-l-2 border-accent pl-3 text-xs font-bold tracking-[0.18em] text-accent uppercase">
           Training · Nutrition · Performance
         </span>
 
-        <h1 class="max-w-xl font-heading text-5xl leading-[0.94] font-extrabold uppercase text-purple-500 sm:text-6xl lg:text-7xl">
-          Transforme seu corpo e sua mente.
-        </h1>
-
-        <h1 class="max-w-xl font-heading text-5xl leading-[0.94] font-extrabold uppercase text-white sm:text-6xl lg:text-7xl">
-          Construa seu melhor eu.
+        <h1 class="max-w-xl font-heading text-5xl leading-[0.94] font-bold uppercase sm:text-6xl lg:text-7xl">
+          <span class="block text-accent">Transforme seu corpo e sua mente.</span>
+          <span class="mt-1 block text-white">Construa seu melhor eu.</span>
         </h1>
 
         <p class="mt-6 max-w-lg text-base leading-relaxed text-zinc-300 sm:text-lg">
@@ -29,7 +26,7 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
             @click="trackWhatsappContact"
             target="_blank"
             rel="noopener noreferrer"
-            class="hero-cta inline-flex min-h-14 items-center justify-center bg-accent px-7 py-4 text-center text-sm font-extrabold tracking-wide text-zinc-950 uppercase sm:px-8"
+            class="button-primary inline-flex min-h-14 px-7 py-4 text-center text-sm tracking-wide uppercase sm:px-8"
           >
             Estou pronto para entrar no jogo
           </a>
@@ -49,16 +46,3 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
   </section>
 </template>
 
-<style scoped>
-.hero-cta {
-  transition: transform 180ms ease, background-color 180ms ease;
-}
-
-.hero-cta:hover {
-  transform: scale(1.05);
-}
-
-.hero-cta:active {
-  transform: scale(0.95);
-}
-</style>

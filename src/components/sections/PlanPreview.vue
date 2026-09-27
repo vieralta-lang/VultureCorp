@@ -10,7 +10,7 @@
           Você acompanha o que importa para executar bem: metas nutricionais, treino, refeições e
           evolução do processo.
         </p>
-        <a :href="getWhatsappLink()" @click="trackWhatsappContact" target="_blank" rel="noopener noreferrer" class="plan-cta">
+        <a :href="getWhatsappLink()" @click="trackWhatsappContact" target="_blank" rel="noopener noreferrer" class="button-primary mt-8 px-7 py-4 text-sm uppercase">
           Começar minha avaliação →
         </a>
       </div>
@@ -66,23 +66,6 @@ const macros = [
 </script>
 
 <style scoped>
-.plan-cta {
-  display: inline-flex;
-  margin-top: 2rem;
-  border-radius: 9999px;
-  background: var(--color-accent);
-  padding: 1rem 1.75rem;
-  color: white;
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  transition: transform 180ms ease;
-}
-
-.plan-cta:hover { transform: scale(1.05); }
-.plan-cta:active { transform: scale(0.95); }
-
 .plan-shell { overflow: hidden; border: 1px solid rgb(255 255 255 / 12%); border-radius: 1.25rem; background: #18181b; box-shadow: 0 20px 60px rgb(0 0 0 / 35%); }
 .plan-topbar { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgb(255 255 255 / 8%); padding: 1rem 1.25rem; color: #a1a1aa; font-size: 0.75rem; }
 .plan-content { padding: 1.25rem; }

@@ -10,7 +10,7 @@ import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/
     rel="noopener noreferrer"
     aria-label="Falar no WhatsApp"
     :title="siteConfig.whatsappDisplay"
-    class="whatsapp-button fixed right-5 bottom-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-white shadow-lg shadow-accent/30 sm:right-8 sm:bottom-8"
+    class="button-icon whatsapp-button fixed right-5 bottom-5 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-accent text-white shadow-lg shadow-accent/30 hover:scale-105 hover:shadow-xl hover:shadow-accent/40 sm:right-8 sm:bottom-8"
   >
     <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-40" />
     <svg xmlns="http://www.w3.org/2000/svg" class="relative h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
@@ -19,16 +19,3 @@ import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/
   </a>
 </template>
 
-<style scoped>
-.whatsapp-button {
-  transition: transform 180ms ease;
-}
-
-.whatsapp-button:hover {
-  transform: scale(1.1);
-}
-
-.whatsapp-button:active {
-  transform: scale(0.95);
-}
-</style>

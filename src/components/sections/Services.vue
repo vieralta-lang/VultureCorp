@@ -76,8 +76,8 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
             @click="trackWhatsappContact"
             target="_blank"
             rel="noopener noreferrer"
-            class="mt-3 inline-flex min-h-12 items-center justify-center px-5 py-3 text-center text-sm font-extrabold tracking-wide uppercase transition-colors"
-            :class="plan.recommended ? 'bg-accent text-zinc-950 hover:bg-accent-dim' : 'border border-accent text-accent hover:bg-accent hover:text-zinc-950'"
+            class="mt-3 min-h-12 px-5 py-3 text-center text-sm tracking-wide uppercase"
+            :class="plan.recommended ? 'button-primary' : 'button-secondary'"
           >
             {{ plan.recommended ? 'Assumir o compromisso' : 'Começar agora' }}
           </a>

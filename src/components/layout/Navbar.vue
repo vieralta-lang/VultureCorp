@@ -46,7 +46,7 @@ function closeMenu() {
         target="_blank"
         rel="noopener noreferrer"
         :title="siteConfig.whatsappDisplay"
-        class="nav-cta hidden bg-accent px-5 py-2.5 text-sm font-bold text-zinc-950 lg:inline-block"
+        class="button-primary nav-cta hidden px-5 py-2.5 text-sm lg:inline-flex"
       >
         Entrar no jogo
       </a>
@@ -54,7 +54,7 @@ function closeMenu() {
       <button
         type="button"
         aria-label="Abrir menu"
-        class="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-white lg:hidden"
+        class="button-icon flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-white hover:border-accent/50 hover:bg-white/5 lg:hidden"
         @click="isOpen = !isOpen"
       >
         <svg v-if="!isOpen" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -91,7 +91,7 @@ function closeMenu() {
           @click="trackWhatsappContact(); closeMenu()"
           target="_blank"
           rel="noopener noreferrer"
-          class="mt-4 block rounded-full bg-accent px-5 py-3.5 text-center text-sm font-bold text-white"
+          class="button-primary mt-4 w-full px-5 py-3.5 text-center text-sm"
         >
           Começar agora
         </a>
@@ -101,20 +101,7 @@ function closeMenu() {
 </template>
 
 <style scoped>
-.nav-link,
-.nav-cta {
-  transition: color 180ms ease, transform 180ms ease;
-}
-
 .nav-link:hover {
   color: white;
-}
-
-.nav-cta:hover {
-  transform: scale(1.05);
-}
-
-.nav-cta:active {
-  transform: scale(0.95);
 }
 </style>

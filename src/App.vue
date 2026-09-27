@@ -9,7 +9,6 @@ import Delivery from './components/sections/Delivery.vue'
 import Faq from './components/sections/Faq.vue'
 import Hero from './components/sections/Hero.vue'
 import Nutrition from './components/sections/Nutrition.vue'
-import Results from './components/sections/Results.vue'
 import TnpEssence from './components/sections/TnpEssence.vue'
 import WhatsappFloatButton from './components/ui/WhatsappFloatButton.vue'
 
@@ -29,7 +28,7 @@ onMounted(() => {
     <!-- <PlanPreview /> -->
     <!-- <Services /> -->
     <Audience />
-    <Results />
+    <!-- <Results /> -->
     <About />
     <Faq />
     <CTA />
