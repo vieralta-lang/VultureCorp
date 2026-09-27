@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import logo from '../../assets/logo.webp'
-import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/site'
+import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
 
 const isOpen = ref(false)
 
