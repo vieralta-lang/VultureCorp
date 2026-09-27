@@ -5,7 +5,7 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
 
 <template>
   <section id="top" class="relative overflow-hidden pt-24 pb-20 sm:pt-28 sm:pb-28 lg:pt-36">
-    <div class="container-page relative grid items-center gap-14 lg:grid-cols-2 lg:gap-10">
+    <div class="container-page relative grid items-center lg:items-start gap-14 lg:grid-cols-2 lg:gap-10">
       <div class="flex flex-col items-start">
         <span class="mb-6 inline-flex items-center gap-2 border-l-2 border-accent pl-3 text-xs font-bold tracking-[0.18em] text-accent uppercase">
           Training · Nutrition · Performance
