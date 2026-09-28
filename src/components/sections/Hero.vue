@@ -16,15 +16,11 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
           <span class="mt-2 block text-white">Construa seu melhor eu.</span>
         </h1>
 
-<<<<<<< HEAD
-        <div class="mt-10 flex w-full sm:w-auto">
-=======
         <p class="mt-8 max-w-lg text-base leading-relaxed text-zinc-300 sm:text-lg">
           Sem dias de espera, sem desculpas. Seu treino de musculação e sua dieta saem prontos no primeiro atendimento. Acompanhamento próximo, suporte rápido e uma equipe que tem paixão pelo jogo.
         </p>
 
         <div class="mt-12 flex w-full sm:w-auto">
->>>>>>> 98f6692 (better the spacement on tests)
           <a
             :href="getWhatsappLink()"
             @click="trackWhatsappContact"
