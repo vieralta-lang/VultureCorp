@@ -7,16 +7,24 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
   <section id="top" class="relative overflow-hidden pt-24 pb-20 sm:pt-28 sm:pb-28 lg:pt-36">
     <div class="container-page relative grid items-center lg:items-start gap-14 lg:grid-cols-2 lg:gap-10">
       <div class="flex flex-col items-start">
-        <span class="mb-6 inline-flex items-center gap-2 border-l-2 border-accent pl-3 text-xs font-bold tracking-[0.18em] text-accent uppercase">
+        <span class="mb-8 inline-flex items-center gap-2 border-l-2 border-accent pl-3 text-xs font-bold tracking-[0.18em] text-accent uppercase">
           Training · Nutrition · Performance
         </span>
 
-        <h1 class="max-w-xl font-heading text-5xl leading-[0.94] font-bold uppercase sm:text-6xl lg:text-7xl">
+        <h1 class="max-w-xl font-heading text-5xl leading-[1.02] font-bold uppercase sm:text-6xl lg:text-7xl">
           <span class="block text-accent">Transforme seu corpo e sua mente.</span>
-          <span class="mt-1 block text-white">Construa seu melhor eu.</span>
+          <span class="mt-2 block text-white">Construa seu melhor eu.</span>
         </h1>
 
+<<<<<<< HEAD
         <div class="mt-10 flex w-full sm:w-auto">
+=======
+        <p class="mt-8 max-w-lg text-base leading-relaxed text-zinc-300 sm:text-lg">
+          Sem dias de espera, sem desculpas. Seu treino de musculação e sua dieta saem prontos no primeiro atendimento. Acompanhamento próximo, suporte rápido e uma equipe que tem paixão pelo jogo.
+        </p>
+
+        <div class="mt-12 flex w-full sm:w-auto">
+>>>>>>> 98f6692 (better the spacement on tests)
           <a
             :href="getWhatsappLink()"
             @click="trackWhatsappContact"
