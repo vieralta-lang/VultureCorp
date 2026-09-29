@@ -1,29 +1,49 @@
 <script setup lang="ts">
+type Segment = string | { strong: string }
+
 interface QA {
   question: string
-  answer: string
+  answer: Segment[][]
 }
 
 const faqs: QA[] = [
   {
     question: 'Em quanto tempo recebo meu treino e minha dieta?',
-    answer:
-      'No primeiro atendimento. Você faz a consultoria inicial e sai com tudo pronto para executar. Nada de esperar de 3 a 7 dias úteis.',
+    answer: [
+      [{ strong: 'No primeiro atendimento.' }],
+      ['Depois da consultoria inicial, você recebe o planejamento necessário para começar a executar.'],
+      ['Você não precisa esperar 3, 5 ou 7 dias para descobrir o que deveria estar fazendo.'],
+    ],
   },
   {
-    question: 'Como funciona o acompanhamento de perto?',
-    answer:
-      'Você tem um canal direto de alta disponibilidade para tirar dúvidas, receber orientação, manter a execução e contar com incentivo contínuo.',
+    question: 'E se eu tiver uma dúvida durante o processo?',
+    answer: [
+      ['Você tem um canal direto com a equipe.'],
+      ['A ideia é simples: ', { strong: 'dúvida não precisa virar interrupção.' }],
+      ['Perguntou, recebeu orientação e voltou para a execução.'],
+    ],
   },
   {
-    question: 'Sou iniciante. A consultoria serve para mim?',
-    answer:
-      'Sim. O treino e a dieta são adaptados ao seu nível atual. É sobre ser melhor do que você foi ontem, com orientação passo a passo.',
+    question: 'Sou iniciante. A TNP é para mim?',
+    answer: [
+      ['Sim.'],
+      ['Você não precisa chegar sabendo treinar.'],
+      ['O planejamento é adaptado ao seu nível atual e evolui junto com você.'],
+    ],
   },
   {
-    question: 'O treino é só para academia?',
-    answer:
-      'Nosso foco e especialidade são a musculação para uma transformação corporal sólida e mais performance.',
+    question: 'O treino é apenas para academia?',
+    answer: [
+      ['Nosso foco é a musculação e a transformação corporal por meio de um planejamento estruturado.'],
+      ['O programa é desenvolvido de acordo com seu objetivo e sua realidade de treino.'],
+    ],
+  },
+  {
+    question: 'Vocês atendem presencialmente?',
+    answer: [
+      ['Não.'],
+      ['A TNP funciona ', { strong: '100% online' }, ', permitindo que você tenha acompanhamento independentemente de onde esteja.'],
+    ],
   },
 ]
 </script>
@@ -36,11 +56,8 @@ const faqs: QA[] = [
           <span class="h-px w-8 bg-accent" /> FAQ
         </p>
         <h2 class="mt-5 font-heading text-4xl leading-tight font-extrabold text-white sm:text-5xl">
-          A mente que não tem dúvidas, executa.
+          Antes de começar, você provavelmente quer saber:
         </h2>
-        <p class="mt-5 max-w-sm leading-relaxed text-zinc-400">
-          Direto ao ponto. Tire suas dúvidas e entre no jogo com confiança.
-        </p>
       </header>
 
       <div class="border-t border-white/15">
@@ -55,7 +72,14 @@ const faqs: QA[] = [
             <span class="font-heading text-lg leading-snug font-bold text-white sm:text-xl">{{ item.question }}</span>
             <span class="faq-toggle flex h-8 w-8 items-center justify-center border border-white/15 text-xl font-light text-accent" aria-hidden="true">+</span>
           </summary>
-          <p class="faq-answer ml-[3.25rem] max-w-xl pb-6 pr-2 text-sm leading-relaxed text-zinc-400 sm:ml-[4.25rem] sm:pb-7">{{ item.answer }}</p>
+          <div class="faq-answer ml-[3.25rem] max-w-xl space-y-3 pb-6 pr-2 text-sm leading-relaxed text-zinc-400 sm:ml-[4.25rem] sm:pb-7">
+            <p v-for="(paragraph, pIndex) in item.answer" :key="pIndex">
+              <template v-for="(segment, sIndex) in paragraph" :key="sIndex">
+                <strong v-if="typeof segment === 'object'" class="font-semibold text-white">{{ segment.strong }}</strong>
+                <template v-else>{{ segment }}</template>
+              </template>
+            </p>
+          </div>
         </details>
       </div>
     </div>

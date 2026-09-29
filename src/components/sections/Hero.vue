@@ -12,12 +12,20 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
         </span>
 
         <h1 class="max-w-xl font-heading text-5xl leading-[1.02] font-bold uppercase sm:text-6xl lg:text-7xl">
-          <span class="block text-accent">Transforme seu corpo e sua mente.</span>
-          <span class="mt-2 block text-white">Construa seu melhor eu.</span>
+          <span class="block text-accent">Transforme seu corpo</span>
+          <span class="mt-2 block text-white">com direção.</span>
         </h1>
 
+        <p class="mt-8 font-heading text-xl font-bold tracking-wide text-white uppercase sm:text-2xl">
+          Treine certo. Coma certo. Ajuste rápido.
+        </p>
+
+        <p class="mt-4 max-w-lg text-base leading-relaxed text-zinc-300 sm:text-lg">
+          Um método de acompanhamento para quem quer parar de improvisar e começar a executar com estratégia.
+        </p>
+
         <div class="mt-12 flex w-full sm:w-auto">
-          <a
+          <!-- <a
             :href="getWhatsappLink()"
             @click="trackWhatsappContact"
             target="_blank"
@@ -25,7 +33,7 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
             class="button-primary inline-flex min-h-14 px-7 py-4 text-center text-sm tracking-wide uppercase sm:px-8"
           >
             Estou pronto para entrar no jogo
-          </a>
+          </a> -->
         </div>
       </div>
 

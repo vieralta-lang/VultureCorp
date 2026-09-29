@@ -12,6 +12,7 @@ const year = new Date().getFullYear()
           {{ siteConfig.name }}
         </p>
         <p class="text-sm text-zinc-500">Assessoria Esportiva</p>
+        <p class="mt-1 text-xs tracking-widest text-zinc-600 uppercase">Training · Nutrition · Performance</p>
       </div>
 
       <div class="flex items-center gap-6">

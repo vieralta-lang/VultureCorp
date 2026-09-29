@@ -4,19 +4,24 @@
       <div>
         <p class="text-sm font-semibold tracking-widest text-accent uppercase">Nutrição</p>
         <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Nutrição personalizada para o seu objetivo.
+          Sua alimentação precisa caber na sua vida.
         </h2>
         <p class="mt-5 max-w-xl text-lg leading-relaxed text-zinc-400">
-          Seu plano alimentar é estruturado para funcionar na sua rotina e respeitar o que o seu
-          corpo precisa para avançar.
+          Não adianta montar uma dieta perfeita no papel se ela não funciona na segunda-feira.
+        </p>
+        <p class="mt-4 max-w-xl leading-relaxed text-zinc-400">
+          A estratégia precisa ser precisa o suficiente para gerar resultado e prática o suficiente para ser executada.
         </p>
       </div>
 
-      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-        <div v-for="item in considerations" :key="item" class="nutrition-item">
-          <span class="h-2 w-2 shrink-0 rounded-full bg-accent" />
-          {{ item }}
-        </div>
+      <div>
+        <p class="mb-4 text-sm font-medium text-zinc-300">Construímos seu plano considerando:</p>
+        <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+          <li v-for="item in considerations" :key="item" class="nutrition-item">
+            <span class="h-2 w-2 shrink-0 rounded-full bg-accent" />
+            {{ item }}
+          </li>
+        </ul>
       </div>
 
       <!-- <div class="nutrition-reference lg:col-span-2">
@@ -34,7 +39,8 @@
 const considerations = [
   'Objetivo',
   'Rotina',
-  'Necessidades individuais',
+  'Preferências',
+  'Necessidades',
   'Composição dos alimentos',
 ]
 </script>
