@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import personalPhoto from '../../assets/personal1.jpeg'
-import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
 </script>
 
 <template>
