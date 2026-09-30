@@ -2,11 +2,11 @@
 import personalPhoto from '../../assets/personal2.jpg'
 
 const highlights = [
-  'Dieta',
   'Treino',
-  'Feedback rápido',
-  'Atendimento 100% online',
-  'Atendemos todos os públicos'
+  'Nutrição',
+  'Feedback',
+  'Tecnologia',
+  'Acompanhamento',
 ]
 </script>
 
@@ -23,23 +23,32 @@ const highlights = [
       <div class="lg:order-1">
         <p class="text-sm font-semibold tracking-widest text-accent uppercase">Quem somos</p>
         <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Ciência do treino. Precisão da tecnologia.
+          A TNP nasceu porque não queríamos fazer mais uma consultoria igual.
         </h2>
-        <p class="mt-6 text-lg leading-relaxed text-zinc-400">
-          A Insatisfação que Mudou o Jogo
-          O TNP Method nasceu da nossa recusa em aceitar o padrão do mercado e da vontade implacável de entregar algo
-          radicalmente diferente. Para ditar as nossas próprias regras, construímos nossa tecnologia do zero. Nosso
-          único objetivo: garantir velocidade real, direção exata e um acompanhamento lado a lado. Nós elevamos o nível
-          porque temos paixão por esse jogo.
+        <div class="mt-6 space-y-4 text-lg leading-relaxed text-zinc-400">
+          <p>O mercado já está cheio de PDFs, planilhas e promessas.</p>
+          <p>Nós queríamos construir um processo diferente.</p>
+          <p>
+            Por isso, além da metodologia de treino e nutrição, construímos nossa própria tecnologia para organizar o
+            atendimento, acelerar a criação dos planos e aproximar o profissional do aluno.
+          </p>
+        </div>
+
+        <p class="mt-8 border-l-2 border-accent pl-4 font-heading text-xl leading-snug font-bold text-white">
+          Tecnologia para ganhar velocidade.<br />
+          Método para ganhar direção.<br />
+          Acompanhamento para manter a execução.
         </p>
 
-        <ul class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
+        <p class="mt-8 text-sm font-medium text-zinc-300">A TNP une:</p>
+        <ul class="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
           <li v-for="item in highlights" :key="item"
             class="flex items-center gap-2 border border-white/10 bg-zinc-900/40 px-3 py-3 text-xs font-medium text-zinc-200 sm:px-4 sm:text-sm">
             <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
             {{ item }}
           </li>
         </ul>
+        <p class="mt-4 text-sm text-zinc-400">Tudo dentro de um único processo.</p>
       </div>
     </div>
   </section>

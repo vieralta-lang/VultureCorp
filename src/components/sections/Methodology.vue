@@ -8,23 +8,28 @@ interface Step {
 const steps: Step[] = [
   {
     number: '01',
-    title: 'Ataque imediato',
-    description: 'Seu treino de musculação e sua dieta ficam prontos no primeiro atendimento. Zero espera.',
+    title: 'Treino estruturado',
+    description: 'Planejamento voltado para seu objetivo e seu nível atual.',
   },
   {
     number: '02',
-    title: 'Alta disponibilidade',
-    description: 'Dúvidas sobre execução ou alimentação? Nosso suporte responde rápido e acompanha você de perto.',
+    title: 'Nutrição personalizada',
+    description: 'Uma estratégia alimentar construída considerando sua rotina, objetivo e necessidades.',
   },
   {
     number: '03',
-    title: 'Treino e nutrição letais',
-    description: 'Musculação periodizada para hipertrofia e força, com alimentação pensada para sua performance.',
+    title: 'Suporte próximo',
+    description: 'Orientação para você não ficar travado quando surgir uma dúvida.',
   },
   {
     number: '04',
-    title: 'Mentalidade inabalável',
-    description: 'Acompanhamos sua evolução e puxamos você para cima quando a motivação tentar falhar.',
+    title: 'Acompanhamento da evolução',
+    description: 'Decisões baseadas no que está acontecendo com você — não em um modelo pronto.',
+  },
+  {
+    number: '05',
+    title: 'Tecnologia própria',
+    description: 'Desenvolvemos nossas próprias ferramentas para tornar o processo mais rápido, organizado e preciso.',
   },
 ]
 </script>
@@ -33,16 +38,13 @@ const steps: Step[] = [
   <section id="metodo" class="border-y border-white/5 bg-zinc-900/30 py-24 sm:py-32">
     <div class="container-page">
       <div class="mx-auto max-w-2xl text-center">
-        <p class="text-sm font-semibold tracking-widest text-accent uppercase">TNP Method</p>
-        <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Training. Nutrition. Performance.
+        <h2 class="font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+          Não é só um plano.
+          <span class="block text-accent">É um sistema de acompanhamento.</span>
         </h2>
-        <p class="mt-4 text-zinc-400">
-          Inspirados pela Mamba Negra: obsessão pelo processo, disciplina e excelência no básico. O seu resultado é o nosso troféu.
-        </p>
       </div>
 
-      <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <div
           v-for="(step, index) in steps"
           :key="step.number"

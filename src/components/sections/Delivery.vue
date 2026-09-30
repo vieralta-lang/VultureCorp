@@ -4,11 +4,11 @@ interface Item {
 }
 
 const items: Item[] = [
-  { title: 'Ataque imediato' },
-  { title: 'Suporte rápido' },
-  { title: 'Treino e nutrição' },
-  { title: 'Mentalidade inabalável' },
-  { title: 'Tecnologia própria' },
+  { title: 'Hipertrofia' },
+  { title: 'Emagrecimento' },
+  { title: 'Definição' },
+  { title: 'Saúde' },
+  { title: 'Rendimento' },
 ]
 </script>
 

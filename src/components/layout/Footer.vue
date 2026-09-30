@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/site'
 
 const year = new Date().getFullYear()
@@ -12,6 +13,7 @@ const year = new Date().getFullYear()
           {{ siteConfig.name }}
         </p>
         <p class="text-sm text-zinc-500">Assessoria Esportiva</p>
+        <p class="mt-1 text-xs tracking-widest text-zinc-600 uppercase">Training · Nutrition · Performance</p>
       </div>
 
       <div class="flex items-center gap-6">
@@ -48,6 +50,14 @@ const year = new Date().getFullYear()
         © {{ year }} {{ siteConfig.footerName }}. Todos os direitos reservados.
       </p>
     </div>
+    <div class="container-page mt-8 text-center">
+      <RouterLink
+        to="/profissionais"
+        class="professional-link text-sm text-zinc-500"
+      >
+        Conheça o TNP para profissionais →
+      </RouterLink>
+    </div>
   </footer>
 </template>
 
@@ -58,5 +68,13 @@ const year = new Date().getFullYear()
 
 .social-link:hover {
   color: var(--color-accent);
+}
+
+.professional-link {
+  transition: color 180ms ease;
+}
+
+.professional-link:hover {
+  color: rgb(212 212 216);
 }
 </style>

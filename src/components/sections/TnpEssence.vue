@@ -8,18 +8,18 @@ interface Pillar {
 const pillars: Pillar[] = [
   {
     label: '01',
-    title: 'O problema não é você.',
-    description: 'É pagar por uma consultoria e esperar dias por um PDF genérico, sem direção quando surge uma dúvida no meio do treino.',
+    title: 'Você não deveria treinar no escuro.',
+    description: 'Seu treino precisa considerar seu nível, objetivo, rotina e evolução. Não entregamos uma lista de exercícios e desaparecemos.',
   },
   {
     label: '02',
-    title: 'A motivação não espera.',
-    description: 'Quando o suporte demora 24 horas, a dúvida vira pausa, a motivação esfria e o resultado fica para depois.',
+    title: 'Dúvida não pode virar desculpa.',
+    description: 'A execução acontece no mundo real. Por isso, quando surgir uma dúvida sobre treino ou alimentação, você tem acesso à equipe para receber orientação e continuar.',
   },
   {
     label: '03',
-    title: 'Nós não aceitamos descaso.',
-    description: 'Se você está disposto a fazer o trabalho duro, merece uma equipe na trincheira com você, com direção e acompanhamento de perto.',
+    title: 'O plano precisa acompanhar você.',
+    description: 'Seu corpo muda. Sua rotina muda. Sua capacidade muda. O planejamento precisa acompanhar esse processo — e não ficar parado em um PDF.',
   },
 ]
 </script>
@@ -28,13 +28,17 @@ const pillars: Pillar[] = [
   <section id="tnp" class="py-24 sm:py-32">
     <div class="container-page">
       <div class="mx-auto max-w-2xl text-center">
-        <p class="text-sm font-semibold tracking-widest text-accent uppercase">A mediocridade do mercado fitness</p>
-        <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          O sistema te abandona. O TNP Method não.
+        <h2 class="font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+          O problema não é falta de esforço.
+          <span class="block text-accent">É falta de direção.</span>
         </h2>
-        <p class="mt-4 text-zinc-400">
-          Alta disponibilidade, obsessão pelo processo e excelência no básico. Nós não vendemos atalhos: entregamos direção exata para você executar.
-        </p>
+        <div class="mt-6 space-y-3 text-zinc-400">
+          <p>Você treina. Tenta comer melhor. Pesquisa exercício, dieta, suplemento, técnica...</p>
+          <p>Mas quando surge uma dúvida, você fica esperando.</p>
+          <p>Quando o treino não encaixa, improvisa.</p>
+          <p>Quando a dieta não funciona na rotina, abandona.</p>
+        </div>
+        <p class="mt-6 font-semibold text-white">A TNP existe para eliminar esse ciclo.</p>
       </div>
 
       <div class="mt-16 grid gap-6 md:grid-cols-3">
