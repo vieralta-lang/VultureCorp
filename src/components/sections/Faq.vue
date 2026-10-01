@@ -8,41 +8,27 @@ interface QA {
 
 const faqs: QA[] = [
   {
-    question: 'Em quanto tempo recebo meu treino e minha dieta?',
+    question: 'Em quanto tempo recebo meu treino e dieta?',
     answer: [
-      [{ strong: 'No primeiro atendimento.' }],
-      ['Depois da consultoria inicial, você recebe o planejamento necessário para começar a executar.'],
-      ['Você não precisa esperar 3, 5 ou 7 dias para descobrir o que deveria estar fazendo.'],
+      [{ strong: 'No primeiro atendimento.' }, ' Sem esperar dias para descobrir o que fazer.'],
     ],
   },
   {
-    question: 'E se eu tiver uma dúvida durante o processo?',
+    question: 'E se eu tiver dúvidas na execução?',
     answer: [
-      ['Você tem um canal direto com a equipe.'],
-      ['A ideia é simples: ', { strong: 'dúvida não precisa virar interrupção.' }],
-      ['Perguntou, recebeu orientação e voltou para a execução.'],
+      [{ strong: 'Você tem suporte direto.' }, ' Ajustamos o plano no meio do caminho se algo não encaixar.'],
     ],
   },
   {
-    question: 'Sou iniciante. A TNP é para mim?',
+    question: 'Sou iniciante, serve para mim?',
     answer: [
-      ['Sim.'],
-      ['Você não precisa chegar sabendo treinar.'],
-      ['O planejamento é adaptado ao seu nível atual e evolui junto com você.'],
+      [{ strong: 'Sim.' }, ' O planejamento é construído com base na sua capacidade atual de execução.'],
     ],
   },
   {
-    question: 'O treino é apenas para academia?',
+    question: 'É só para academia?',
     answer: [
-      ['Nosso foco é a musculação e a transformação corporal por meio de um planejamento estruturado.'],
-      ['O programa é desenvolvido de acordo com seu objetivo e sua realidade de treino.'],
-    ],
-  },
-  {
-    question: 'Vocês atendem presencialmente?',
-    answer: [
-      ['Não.'],
-      ['A TNP funciona ', { strong: '100% online' }, ', permitindo que você tenha acompanhamento independentemente de onde esteja.'],
+      [{ strong: 'Não.' }, ' Adaptamos os treinos para o ambiente e os equipamentos que você tem disponíveis.'],
     ],
   },
 ]
@@ -56,7 +42,7 @@ const faqs: QA[] = [
           <span class="h-px w-8 bg-accent" /> FAQ
         </p>
         <h2 class="mt-5 font-heading text-4xl leading-tight font-extrabold text-white sm:text-5xl">
-          Antes de começar, você provavelmente quer saber:
+          FAQ
         </h2>
       </header>
 

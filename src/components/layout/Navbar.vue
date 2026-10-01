@@ -9,6 +9,7 @@ const links = [
   { label: 'Método', href: '#metodo' },
   { label: 'Quem somos', href: '#sobre' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'Área do Aluno', href: '#' },
 ]
 
 function closeMenu() {

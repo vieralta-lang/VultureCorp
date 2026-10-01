@@ -2,10 +2,12 @@
   <section class="border-y border-white/5 bg-zinc-900/30 py-24 sm:py-32">
     <div class="container-page">
       <div class="mx-auto max-w-2xl text-center">
-        <p class="text-sm font-semibold tracking-widest text-accent uppercase">Para quem é a TNP?</p>
-        <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Para quem decidiu levar o processo a sério.
+        <h2 class="font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+          Para quem é a TNP?
         </h2>
+        <p class="mt-4 text-lg text-zinc-400">
+          Para quem decidiu levar o processo a sério:
+        </p>
       </div>
       <ul class="audience-list">
         <li v-for="item in audience" :key="item">
@@ -18,12 +20,9 @@
 
 <script setup lang="ts">
 const audience = [
-  'Para quem quer parar de trocar de treino toda semana.',
-  'Para quem quer organizar a alimentação sem viver de improviso.',
-  'Para quem quer saber exatamente o que fazer quando entrar na academia.',
-  'Para quem quer acompanhamento durante a execução — não apenas um PDF no início do mês.',
-  'Para quem está cansado de receber um plano genérico e ficar sozinho depois.',
-  'Para quem entende que resultado exige trabalho, mas não deveria exigir fazer tudo sozinho.',
+  'Quer parar de trocar de treino toda semana e seguir uma lógica estruturada.',
+  'Exige acompanhamento contínuo — não apenas um PDF abandonado no celular.',
+  'Entende que resultado exige trabalho, mas não quer fazer tudo sozinho.',
 ]
 </script>
 

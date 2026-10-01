@@ -1,13 +1,5 @@
 <script setup lang="ts">
 import personalPhoto from '../../assets/personal2.jpg'
-
-const highlights = [
-  'Treino',
-  'Nutrição',
-  'Feedback',
-  'Tecnologia',
-  'Acompanhamento',
-]
 </script>
 
 <template>
@@ -23,14 +15,12 @@ const highlights = [
       <div class="lg:order-1">
         <p class="text-sm font-semibold tracking-widest text-accent uppercase">Quem somos</p>
         <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          A TNP nasceu porque não queríamos fazer mais uma consultoria igual.
+          Construímos nossa própria tecnologia para não ser só mais uma consultoria.
         </h2>
         <div class="mt-6 space-y-4 text-lg leading-relaxed text-zinc-400">
-          <p>O mercado já está cheio de PDFs, planilhas e promessas.</p>
-          <p>Nós queríamos construir um processo diferente.</p>
+          <p>O mercado está saturado de PDFs lentos, planilhas confusas e promessas vazias.</p>
           <p>
-            Por isso, além da metodologia de treino e nutrição, construímos nossa própria tecnologia para organizar o
-            atendimento, acelerar a criação dos planos e aproximar o profissional do aluno.
+            Desenvolvemos um software próprio, do zero, para organizar o seu atendimento, gerar os planos com velocidade e manter o profissional sempre próximo do aluno.
           </p>
         </div>
 
@@ -39,16 +29,6 @@ const highlights = [
           Método para ganhar direção.<br />
           Acompanhamento para manter a execução.
         </p>
-
-        <p class="mt-8 text-sm font-medium text-zinc-300">A TNP une:</p>
-        <ul class="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
-          <li v-for="item in highlights" :key="item"
-            class="flex items-center gap-2 border border-white/10 bg-zinc-900/40 px-3 py-3 text-xs font-medium text-zinc-200 sm:px-4 sm:text-sm">
-            <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-            {{ item }}
-          </li>
-        </ul>
-        <p class="mt-4 text-sm text-zinc-400">Tudo dentro de um único processo.</p>
       </div>
     </div>
   </section>

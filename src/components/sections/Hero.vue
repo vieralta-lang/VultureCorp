@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import personalPhoto from '../../assets/personal1.jpeg'
+import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
 </script>
 
 <template>
@@ -20,19 +21,19 @@ import personalPhoto from '../../assets/personal1.jpeg'
         </p>
 
         <p class="mt-4 max-w-lg text-base leading-relaxed text-zinc-300 sm:text-lg">
-          Um método de acompanhamento para quem quer parar de improvisar e começar a executar com estratégia.
+          Pare de improvisar e comece a executar com estratégia. Um método de acompanhamento 100% online.
         </p>
 
         <div class="mt-12 flex w-full sm:w-auto">
-          <!-- <a
+          <a
             :href="getWhatsappLink()"
             @click="trackWhatsappContact"
             target="_blank"
             rel="noopener noreferrer"
             class="button-primary inline-flex min-h-14 px-7 py-4 text-center text-sm tracking-wide uppercase sm:px-8"
           >
-            Estou pronto para entrar no jogo
-          </a> -->
+            Quero começar agora
+          </a>
         </div>
       </div>
 

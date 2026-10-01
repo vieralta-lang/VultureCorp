@@ -12,7 +12,7 @@ const year = new Date().getFullYear()
         <p class="font-heading text-lg font-extrabold text-white">
           {{ siteConfig.name }}
         </p>
-        <p class="text-sm text-zinc-500">Assessoria Esportiva</p>
+        <p class="text-sm text-zinc-500">Acompanhamento Integrado</p>
         <p class="mt-1 text-xs tracking-widest text-zinc-600 uppercase">Training · Nutrition · Performance</p>
       </div>
 
@@ -55,7 +55,7 @@ const year = new Date().getFullYear()
         to="/profissionais"
         class="professional-link text-sm text-zinc-500"
       >
-        Conheça o TNP para profissionais →
+        Conheça o sistema TNP para profissionais →
       </RouterLink>
     </div>
   </footer>
