@@ -125,11 +125,17 @@
         fbq("track", "PageView");
       }
 
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(() => setTimeout(initFacebookPixel, 1000));
-      } else {
-        window.addEventListener('load', () => setTimeout(initFacebookPixel, 1500));
+      // Adiar a inicialização até a interação real do usuário, evitando desperdício de cache TTL curto (20min) e economizando banda inicial
+      const INTERACTION_EVENTS = ['mouseenter', 'mousedown', 'touchstart', 'scroll', 'keydown'];
+      function loadPixelOnInteraction() {
+        initFacebookPixel();
+        INTERACTION_EVENTS.forEach(event => {
+          window.removeEventListener(event, loadPixelOnInteraction);
+        });
       }
+      INTERACTION_EVENTS.forEach(event => {
+        window.addEventListener(event, loadPixelOnInteraction, { passive: true });
+      });
     </script>
     <!-- End Meta Pixel Code -->
   </head>
