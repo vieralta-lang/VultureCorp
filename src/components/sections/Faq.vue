@@ -14,6 +14,12 @@ const faqs: QA[] = [
     ],
   },
   {
+    question: 'Posso escolher entre Nutrição e Treinamento Integrado?',
+    answer: [
+      [{ strong: 'Sim.' }, ' Você pode optar por receber apenas acompanhamento nutricional ou apenas treinamento integrado, conforme sua necessidade.'],
+    ],
+  },
+  {
     question: 'E se eu tiver dúvidas na execução?',
     answer: [
       [{ strong: 'Você tem suporte direto.' }, ' Ajustamos o plano no meio do caminho se algo não encaixar.'],
@@ -31,6 +37,18 @@ const faqs: QA[] = [
       [{ strong: 'Não.' }, ' Adaptamos os treinos para o ambiente e os equipamentos que você tem disponíveis.'],
     ],
   },
+  {
+    question: 'Atende online?',
+    answer: [
+      [{ strong: 'Totalmente digital.' }, ' Você recebe seu plano e suporte diretamente pelo nosso sistema online, sem precisar se deslocar.'],
+    ],
+  },
+  {
+    question: 'Atendem só atletas?',
+    answer: [
+      [{ strong: 'Não.' }, ' Atendemos tanto atletas quanto pessoas comuns que buscam acompanhamento nutricional e treinamento integrado.'],
+    ],
+  }
 ]
 </script>
 

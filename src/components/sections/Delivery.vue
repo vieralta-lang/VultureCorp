@@ -8,7 +8,10 @@ const items: Item[] = [
   { title: 'Emagrecimento' },
   { title: 'Definição' },
   { title: 'Saúde' },
+  { title: 'Bem-estar' },
   { title: 'Rendimento' },
+  { title: 'Recuperação' },
+  { title: 'Performance' }
 ]
 </script>
 

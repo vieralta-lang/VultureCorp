@@ -1,5 +1,5 @@
 <template>
-  <section class="border-y border-white/5 bg-zinc-900/30 py-24 sm:py-32">
+  <section id="para-quem" class="border-y border-white/5 bg-zinc-900/30 py-24 sm:py-32">
     <div class="container-page">
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
@@ -20,9 +20,10 @@
 
 <script setup lang="ts">
 const audience = [
-  'Quer parar de trocar de treino toda semana e seguir uma lógica estruturada.',
-  'Exige acompanhamento contínuo — não apenas um PDF abandonado no celular.',
-  'Entende que resultado exige trabalho, mas não quer fazer tudo sozinho.',
+  'Pessoa que busca acompanhamento nutricional e treinamento integrado.',
+  'Pessoa que quer resultados consistentes e acompanhamento contínuo.',
+  'Pessoa que busca orientação profissional e personalizada.',
+  'Pessoa que deseja acompanhamento online e flexível.',
 ]
 </script>
 

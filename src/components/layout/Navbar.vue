@@ -6,10 +6,10 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
 const isOpen = ref(false)
 
 const links = [
-  { label: 'Método', href: '#metodo' },
+  { label: 'Para quem', href: '#para-quem' },
   { label: 'Quem somos', href: '#sobre' },
   { label: 'FAQ', href: '#faq' },
-  { label: 'Área do Aluno', href: '#' },
+  { label: 'Contato', href: '#contato' },
 ]
 
 function closeMenu() {

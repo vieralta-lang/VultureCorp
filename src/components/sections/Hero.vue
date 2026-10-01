@@ -16,11 +16,11 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
         </h1>
 
         <p class="mt-8 font-heading text-xl font-bold tracking-wide text-white uppercase sm:text-2xl">
-          Treine certo. Coma certo. Ajuste rápido.
+          Entre em contato conosco.
         </p>
 
         <p class="mt-4 max-w-lg text-base leading-relaxed text-zinc-300 sm:text-lg">
-          Pare de improvisar e comece a executar com estratégia. Um método de acompanhamento 100% online.
+          Somos especialistas em acompanhamento nutricional e treinamento integrado.
         </p>
 
         <div class="mt-12 flex w-full sm:w-auto">
@@ -31,7 +31,7 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
             rel="noopener noreferrer"
             class="button-primary inline-flex min-h-14 px-7 py-4 text-center text-sm tracking-wide uppercase sm:px-8"
           >
-            Quero começar agora
+            Quero saber mais
           </a>
         </div>
       </div>
