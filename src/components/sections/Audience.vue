@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 const audience = [
-  'Pessoa que busca acompanhamento nutricional e treinamento integrado.',
+  'Pessoa que busca acompanhamento nutricional e Treinamento Personalizado.',
   'Pessoa que quer resultados consistentes e acompanhamento contínuo.',
   'Pessoa que busca orientação profissional e personalizada.',
   'Pessoa que deseja acompanhamento online e flexível.',

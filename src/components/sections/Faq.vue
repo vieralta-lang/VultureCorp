@@ -14,9 +14,9 @@ const faqs: QA[] = [
     ],
   },
   {
-    question: 'Posso escolher entre Nutrição e Treinamento Integrado?',
+    question: 'Posso escolher entre Nutrição e Treinamento Personalizado?',
     answer: [
-      [{ strong: 'Sim.' }, ' Você pode optar por receber apenas acompanhamento nutricional ou apenas treinamento integrado, conforme sua necessidade.'],
+      [{ strong: 'Sim.' }, ' Você pode optar por receber apenas acompanhamento nutricional ou apenas Treinamento Personalizado, conforme sua necessidade.'],
     ],
   },
   {
@@ -46,7 +46,7 @@ const faqs: QA[] = [
   {
     question: 'Atendem só atletas?',
     answer: [
-      [{ strong: 'Não.' }, ' Atendemos tanto atletas quanto pessoas comuns que buscam acompanhamento nutricional e treinamento integrado.'],
+      [{ strong: 'Não.' }, ' Atendemos tanto atletas quanto pessoas comuns que buscam acompanhamento nutricional e Treinamento Personalizado.'],
     ],
   }
 ]
