@@ -7,11 +7,11 @@ import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/
     <div class="container-page relative text-center">
       <p class="mb-5 text-sm font-bold tracking-[0.18em] text-accent uppercase">O ultimato</p>
       <h2 class="mx-auto max-w-4xl font-heading text-5xl leading-[0.95] font-extrabold uppercase text-white sm:text-6xl lg:text-7xl">
-        Chegou a hora de
-        <span class="block text-accent">executar.</span>
+        Descanse no final,
+        <span class="block text-accent">não no meio do caminho.</span>
       </h2>
-      <p class="mx-auto mt-6 max-w-2xl text-lg text-zinc-400">
-        Você já sabe o que precisa fazer. A única questão é se vai continuar improvisando ou se vai começar um processo com direção.
+      <p class="mx-auto mt-6 max-w-xl text-lg text-zinc-400">
+        A diferença entre quem você é e quem quer ser começa com a decisão que você toma agora. Você está pronto?
       </p>
 
       <a
@@ -30,4 +30,3 @@ import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/
     </div>
   </section>
 </template>
-
