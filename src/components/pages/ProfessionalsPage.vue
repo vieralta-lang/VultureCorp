@@ -14,6 +14,8 @@
         O software TNP ajuda você a montar e entregar materiais personalizados aos seus clientes com mais clareza e profissionalismo.
       </p>
 
+      <h1 class="mt-4 font-color=text-accent font-heading text-4xl font-extrabold text-white sm:text-2xl">Em breve disponível para todos os profissionais. entre  em contato para fazer sua pré-reserva.</h1>
+
       <ul class="mt-10 divide-y divide-white/10 border-y border-white/10">
         <li class="py-4 text-zinc-300">Crie planos de treino personalizados.</li>
         <li class="py-4 text-zinc-300">Monte planos alimentares e dietas para seus clientes.</li>
