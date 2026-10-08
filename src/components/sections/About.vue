@@ -17,17 +17,10 @@
           Construímos nossa própria tecnologia para não ser só mais uma consultoria.
         </h2>
         <div class="mt-6 space-y-4 text-lg leading-relaxed text-zinc-400">
-          <p>O mercado está saturado de PDFs lentos, planilhas confusas e promessas vazias.</p>
           <p>
             Desenvolvemos um software próprio, do zero, para organizar o seu atendimento, gerar os planos com velocidade e manter o profissional sempre próximo do aluno.
           </p>
         </div>
-
-        <p class="mt-8 border-l-2 border-accent pl-4 font-heading text-xl leading-snug font-bold text-white">
-          Tecnologia para ganhar velocidade.<br />
-          Método para ganhar direção.<br />
-          Acompanhamento para manter a execução.
-        </p>
       </div>
     </div>
   </section>
