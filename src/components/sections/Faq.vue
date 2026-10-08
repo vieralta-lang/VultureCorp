@@ -1,9 +1,12 @@
 <script setup lang="ts">
+import pricingPdf from '../../assets/downloads/TNP Planos de Acompanhamento.pdf (6).pdf'
+
 type Segment = string | { strong: string }
 
 interface QA {
   question: string
   answer: Segment[][]
+  download?: boolean
 }
 
 const faqs: QA[] = [
@@ -48,7 +51,14 @@ const faqs: QA[] = [
     answer: [
       [{ strong: 'Não.' }, ' Atendemos tanto atletas quanto pessoas comuns que buscam acompanhamento nutricional e Treinamento Personalizado.'],
     ],
-  }
+  },
+  {
+    question: 'Quais são seus preços?',
+    answer: [
+      [{ strong: 'Nossos preços variam.' }, ' Oferecemos diferentes pacotes de acompanhamento nutricional e Treinamento Personalizado, adaptados às suas necessidades e objetivos.'],
+    ],
+    download: true,
+  },
 ]
 </script>
 
@@ -83,6 +93,14 @@ const faqs: QA[] = [
                 <template v-else>{{ segment }}</template>
               </template>
             </p>
+            <a
+              v-if="item.download"
+              :href="pricingPdf"
+              download="TNP-Planos-de-Acompanhamento.pdf"
+              class="inline-flex items-center border border-accent px-4 py-2 font-heading text-sm font-bold text-accent transition-colors hover:bg-accent hover:text-zinc-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            >
+              Baixar PDF
+            </a>
           </div>
         </details>
       </div>
