@@ -10,9 +10,9 @@ export default defineConfig({
     tailwindcss(),
     legacy({
       targets: ['ios >= 12', 'defaults', 'not dead'],
-      // Garante injeção automática de polyfills essenciais do core-js
+      // Garante injeção automática de polyfills essenciais do core-js no bundle legacy
       polyfills: true,
-      modernPolyfills: true,
+      modernPolyfills: false,
     }),
   ],
   build: {

@@ -15,10 +15,8 @@ const isVideo = computed(
 
 <template>
   <article class="flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-zinc-900/40 p-4 sm:p-5">
-    <div class="aspect-[3/4] w-full shrink-0 overflow-hidden
-         rounded-2xl border border-white/10
-         bg-zinc-950 p-2">
-      <video v-if="isVideo" :src="photo" :aria-label="`Vídeo de ${name}`" controls playsinline preload="metadata" class="h-full w-full rounded-2xl object-scale-down"></video>
+    <div class="aspect-[3/4] w-full shrink-0 overflow-hidden rounded-2xl border border-white/10 bg-zinc-950 p-2">
+      <video v-if="isVideo" :src="photo" :aria-label="`Vídeo de ${name}`" controls playsinline preload="metadata" class="h-full w-full rounded-xl object-cover"></video>
       <img v-else :src="photo" :alt="`Foto de ${name}`" loading="lazy" decoding="async" class="h-full w-full rounded-xl object-cover" />
     </div>
     <div class="flex flex-1 flex-col px-2 pt-6 pb-2 sm:px-3">
@@ -28,7 +26,7 @@ const isVideo = computed(
       <p class="mt-2 flex-1 font-heading text-[1.1rem] leading-snug font-bold text-white">
         {{ depoimento }}
       </p>
-      <p class="mt-4 border-t border-white/10 pt-4 text-sm font-semibold tracking-wide text-accent uppercase">
+      <p class="mt-auto border-t border-white/10 pt-4 text-sm font-semibold tracking-wide text-accent uppercase">
         {{ name }}
       </p>
     </div>

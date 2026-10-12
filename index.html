@@ -39,53 +39,6 @@
     <meta property="twitter:description" content="Transforme seu corpo com direção com o método de acompanhamento 100% online TNP. Treino e nutrição customizados para você executar com estratégia." />
     <meta property="twitter:image" content="https://tnpmethod.com/assets/logo-dSYQisCN.webp" />
 
-    <script>
-      function mostrarTelaVermelha(mensagem, detalhes) {
-        var div = document.createElement("div");
-        div.style.cssText =
-          "position:fixed;top:0;left:0;z-index:999999;background:#990000;color:white;padding:20px;font-size:14px;width:100vw;min-height:100vh;word-wrap:break-word;overflow-y:auto;";
-        div.innerHTML =
-          "<b>Erro:</b> " +
-          mensagem +
-          "<br><br><b>Detalhes:</b> " +
-          (detalhes || "N/A");
-
-        var append = function () {
-          document.body.appendChild(div);
-        };
-        if (document.body) append();
-        else document.addEventListener("DOMContentLoaded", append);
-      }
-
-      window.onerror = function (msg, url, line, col, error) {
-        mostrarTelaVermelha(msg, "Linha: " + line + " | Arquivo: " + url);
-        return false; // permite que o erro vá pro console original
-      };
-
-      window.addEventListener("unhandledrejection", function (e) {
-        mostrarTelaVermelha(
-          "Promise Rejection",
-          e.reason ? e.reason.message || e.reason : "Desconhecido",
-        );
-      });
-
-      window.addEventListener(
-        "error",
-        function (e) {
-          if (
-            e.target &&
-            (e.target.tagName === "SCRIPT" || e.target.tagName === "LINK")
-          ) {
-            mostrarTelaVermelha(
-              "Falha ao baixar arquivo",
-              e.target.src || e.target.href,
-            );
-          }
-        },
-        true,
-      );
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
