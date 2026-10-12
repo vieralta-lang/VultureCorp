@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
+import personalPhoto from '../../assets/personal1.webp'
 </script>
 
 <template>
@@ -38,7 +39,7 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
 
       <div class="relative mx-auto w-full max-w-md lg:max-w-none">
         <div class="aspect-[4/5] w-full overflow-hidden rounded-3xl border border-white/10 shadow-2xl shadow-black/50">
-          <img src="/personal1.jpeg" alt="Guilherme Posanski, especialista da TNP" fetchpriority="high" class="h-full w-full object-cover object-top" />
+          <img :src="personalPhoto" alt="Guilherme Posanski, especialista da TNP" fetchpriority="high" class="h-full w-full object-cover object-top" />
         </div>
         <div class="absolute -bottom-6 -left-6 hidden border border-accent/40 bg-zinc-950 px-6 py-4 sm:block">
           <p class="font-heading text-2xl font-extrabold text-accent">100%</p>
@@ -48,4 +49,3 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
     </div>
   </section>
 </template>
-

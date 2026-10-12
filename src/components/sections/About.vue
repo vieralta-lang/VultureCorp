@@ -6,7 +6,7 @@
     <div class="container-page grid items-center gap-14 lg:grid-cols-2 lg:gap-16">
       <div class="relative mx-auto w-full max-w-md lg:order-2 lg:max-w-none">
         <div class="about-photo aspect-[4/5] w-full overflow-hidden rounded-3xl border border-white/10">
-          <img src="/personal2.jpg" alt="Guilherme Posanski, especialista da TNP" loading="lazy" decoding="async"
+          <img src="../../assets/personal2.webp" alt="Guilherme Posanski, especialista da TNP" loading="lazy" decoding="async"
             class="h-full w-full object-cover object-top" />
         </div>
       </div>
