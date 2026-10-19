@@ -21,7 +21,7 @@ import personalPhoto from '../../assets/personal1.webp'
         </p>
 
         <p class="mt-4 max-w-lg text-base leading-relaxed text-zinc-300 sm:text-lg">
-          Somos especialistas em acompanhamento nutricional e Treinamento Personalizado.
+          Somos especialistas em Acompanhamento Nutricional e Treinamento Personalizado.
         </p>
 
         <div class="mt-12 flex w-full sm:w-auto">
