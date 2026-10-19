@@ -19,23 +19,33 @@ export function getWhatsappLink(message: string = siteConfig.whatsappMessage) {
 
 type Gtag = (
   command: 'event',
-  eventName: string,
-  options: { event_callback: () => void; event_timeout: number },
+  eventName: 'whatsapp_click' | 'conversion',
+  options?: {
+    send_to?: string
+    event_callback?: () => void
+    event_timeout?: number
+  },
 ) => void
 
 export function trackWhatsappContact(url: string) {
   const pixel = (window as Window & { fbq?: (...args: string[]) => void }).fbq
   pixel?.('track', 'Contact')
 
+  let opened = false
+  let fallbackTimer: number | undefined
   const openWhatsapp = () => {
-    if (typeof url === 'string') {
-      window.open(url, '_blank', 'noopener,noreferrer')
-    }
+    if (opened || typeof url !== 'string') return
+    opened = true
+    if (fallbackTimer !== undefined) window.clearTimeout(fallbackTimer)
+    window.open(url, '_blank', 'noopener,noreferrer')
   }
   const gtag = (window as Window & { gtag?: Gtag }).gtag
 
   if (typeof gtag === 'function') {
-    gtag('event', 'whatsapp_click', {
+    gtag('event', 'whatsapp_click')
+    fallbackTimer = window.setTimeout(openWhatsapp, 2000)
+    gtag('event', 'conversion', {
+      send_to: 'AW-18487320342/UhZHCPiqn44dEJa-uO9E',
       event_callback: openWhatsapp,
       event_timeout: 2000,
     })
