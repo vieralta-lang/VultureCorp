@@ -78,9 +78,7 @@ function closeMenu() {
         </ul>
         <a
           :href="getWhatsappLink()"
-          @click="trackWhatsappContact(); closeMenu()"
-          target="_blank"
-          rel="noopener noreferrer"
+          @click.prevent="trackWhatsappContact(getWhatsappLink()); closeMenu()"
           class="button-primary mt-4 w-full px-5 py-3.5 text-center text-sm"
         >
           Começar agora

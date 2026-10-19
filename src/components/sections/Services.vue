@@ -73,9 +73,7 @@ import { getWhatsappLink, trackWhatsappContact } from '../../config/site'
           <p class="mt-7 text-xs text-zinc-500">Investimento informado pelo WhatsApp</p>
           <a
             :href="getWhatsappLink(plan.message)"
-            @click="trackWhatsappContact"
-            target="_blank"
-            rel="noopener noreferrer"
+            @click.prevent="trackWhatsappContact(getWhatsappLink(plan.message))"
             class="mt-3 min-h-12 px-5 py-3 text-center text-sm tracking-wide uppercase"
             :class="plan.recommended ? 'button-primary' : 'button-secondary'"
           >

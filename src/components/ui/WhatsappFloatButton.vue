@@ -5,9 +5,7 @@ import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/
 <template>
   <a
     :href="getWhatsappLink()"
-    @click="trackWhatsappContact"
-    target="_blank"
-    rel="noopener noreferrer"
+    @click.prevent="trackWhatsappContact(getWhatsappLink())"
     aria-label="Falar no WhatsApp"
     :title="siteConfig.whatsappDisplay"
     class="button-icon whatsapp-button fixed right-5 bottom-5 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-accent text-white shadow-lg shadow-accent/30 hover:scale-105 hover:shadow-xl hover:shadow-accent/40 sm:right-8 sm:bottom-8"
@@ -18,4 +16,3 @@ import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/
     </svg>
   </a>
 </template>
-

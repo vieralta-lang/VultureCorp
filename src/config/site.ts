@@ -17,7 +17,29 @@ export function getWhatsappLink(message: string = siteConfig.whatsappMessage) {
   return `https://wa.me/${siteConfig.whatsappNumber}?text=${text}`
 }
 
-export function trackWhatsappContact() {
+type Gtag = (
+  command: 'event',
+  eventName: string,
+  options: { event_callback: () => void; event_timeout: number },
+) => void
+
+export function trackWhatsappContact(url: string) {
   const pixel = (window as Window & { fbq?: (...args: string[]) => void }).fbq
   pixel?.('track', 'Contact')
+
+  const openWhatsapp = () => {
+    if (typeof url === 'string') {
+      window.open(url, '_blank', 'noopener,noreferrer')
+    }
+  }
+  const gtag = (window as Window & { gtag?: Gtag }).gtag
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'whatsapp_click', {
+      event_callback: openWhatsapp,
+      event_timeout: 2000,
+    })
+  } else {
+    openWhatsapp()
+  }
 }

@@ -27,9 +27,7 @@ import personalPhoto from '../../assets/personal1.webp'
         <div class="mt-12 flex w-full sm:w-auto">
           <a
             :href="getWhatsappLink()"
-            @click="trackWhatsappContact"
-            target="_blank"
-            rel="noopener noreferrer"
+            @click.prevent="trackWhatsappContact(getWhatsappLink())"
             class="button-primary inline-flex min-h-14 px-7 py-4 text-center text-sm tracking-wide uppercase sm:px-8"
           >
             Quero saber mais

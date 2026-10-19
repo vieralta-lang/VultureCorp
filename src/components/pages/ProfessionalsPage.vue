@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { trackWhatsappContact } from '../../config/site'
+</script>
+
 <template>
   <div class="container-page flex min-h-screen-safe flex-col">
     <header class="flex items-center justify-between border-b border-white/5 py-6">
@@ -26,8 +30,7 @@
 
       <a
         href="https://wa.me/554799636210"
-        target="_blank"
-        rel="noopener noreferrer"
+        @click.prevent="trackWhatsappContact('https://wa.me/554799636210')"
         class="button-secondary mt-8 gap-2 px-5 py-3 text-sm"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

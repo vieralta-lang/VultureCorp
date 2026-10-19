@@ -10,7 +10,7 @@
           Você acompanha o que importa para executar bem: metas nutricionais, treino, refeições e
           evolução do processo.
         </p>
-        <a :href="getWhatsappLink()" @click="trackWhatsappContact" target="_blank" rel="noopener noreferrer" class="button-primary mt-8 px-7 py-4 text-sm uppercase">
+        <a :href="getWhatsappLink()" @click.prevent="trackWhatsappContact(getWhatsappLink())" class="button-primary mt-8 px-7 py-4 text-sm uppercase">
           Começar minha avaliação →
         </a>
       </div>

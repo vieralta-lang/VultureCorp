@@ -33,9 +33,7 @@ const year = new Date().getFullYear()
         </a>
         <a
           :href="getWhatsappLink()"
-          @click="trackWhatsappContact"
-          target="_blank"
-          rel="noopener noreferrer"
+          @click.prevent="trackWhatsappContact(getWhatsappLink())"
           :title="siteConfig.whatsappDisplay"
           class="social-link flex items-center gap-2 text-sm font-medium text-zinc-400"
         >

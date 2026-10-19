@@ -16,9 +16,7 @@ import { getWhatsappLink, siteConfig, trackWhatsappContact } from '../../config/
 
       <a
         :href="getWhatsappLink()"
-        @click="trackWhatsappContact"
-        target="_blank"
-        rel="noopener noreferrer"
+        @click.prevent="trackWhatsappContact(getWhatsappLink())"
         :title="siteConfig.whatsappDisplay"
         class="button-primary mt-10 inline-flex min-h-16 gap-3 px-8 py-5 text-sm tracking-wide uppercase sm:px-10"
       >
