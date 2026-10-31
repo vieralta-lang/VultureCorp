@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/profissionais",
-      "destination": "/index.html"
+      "destination": "/profissionais.html"
     },
     {
       "source": "/profissionais/",
-      "destination": "/index.html"
+      "destination": "/profissionais.html"
     }
   ]
 }

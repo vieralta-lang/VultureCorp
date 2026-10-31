@@ -1,7 +1,8 @@
 import legacy from '@vitejs/plugin-legacy'
 import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
-import { defineConfig, type Plugin } from 'vite'
+import type { ViteSSGOptions } from 'vite-ssg'
+import { defineConfig, type Plugin, type UserConfig } from 'vite'
 
 function inlineCssPlugin(): Plugin {
   return {
@@ -35,7 +36,14 @@ function inlineCssPlugin(): Plugin {
 }
 
 // https://vite.dev/config/
+const ssgOptions: ViteSSGOptions = {
+  onPageRendered(_route: string, renderedHtml: string) {
+    return renderedHtml.replace(/<html lang="[^"]+"/, '<html lang="pt-BR"')
+  },
+}
+
 export default defineConfig({
+  ssgOptions,
   plugins: [
     vue(),
     tailwindcss(),
@@ -51,4 +59,4 @@ export default defineConfig({
     // Desabilita modulePreload polêmico no Safari/WebKit que causa race conditions no carregamento frio
     modulePreload: false,
   },
-})
+} as UserConfig & { ssgOptions: ViteSSGOptions })
