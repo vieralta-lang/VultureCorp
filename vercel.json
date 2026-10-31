@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/profissionais",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/profissionais/",
+      "destination": "/index.html"
+    }
+  ]
+}

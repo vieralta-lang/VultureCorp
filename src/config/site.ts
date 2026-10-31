@@ -9,7 +9,7 @@ export const siteConfig = {
   whatsappMessage: "Olá, TNP! Estou pronto para entrar no jogo e quero conhecer os planos.",
   instagramHandle: "@tnpmethod",
   instagramUrl: "https://instagram.com/tnp_method",
-  siteUrl: "https://tnpmethod.com",
+  siteUrl: "https://tnpmethod.com.br",
 }
 
 export function getWhatsappLink(message: string = siteConfig.whatsappMessage) {

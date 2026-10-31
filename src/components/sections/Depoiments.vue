@@ -52,10 +52,7 @@ const depoiments = [
   <section id="resultados" class="py-24 sm:py-32">
     <div class="container-page">
       <div class="mx-auto max-w-2xl text-center">
-        <h1 class="text-3xl font-extrabold text-white sm:text-4xl">Depoimentos</h1>
-        <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-        
-        </h2>
+        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Depoimentos</h2>
         <p class="mt-4 text-zinc-400">
           Confira o depoimento de quem confiou no processo.
         </p>

@@ -18,7 +18,7 @@ import { trackWhatsappContact } from '../../config/site'
         O software TNP ajuda você a montar e entregar materiais personalizados aos seus clientes com mais clareza e profissionalismo.
       </p>
 
-      <h1 class="mt-4 font-color=text-accent font-heading text-4xl font-extrabold text-white sm:text-2xl">Em breve disponível para todos os profissionais. entre  em contato para fazer sua pré-reserva.</h1>
+      <h2 class="mt-4 font-heading text-2xl font-extrabold text-accent sm:text-3xl">Em breve disponível para todos os profissionais. Entre em contato para fazer sua pré-reserva.</h2>
 
       <ul class="mt-10 divide-y divide-white/10 border-y border-white/10">
         <li class="py-4 text-zinc-300">Crie planos de treino personalizados.</li>
