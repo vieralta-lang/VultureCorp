@@ -1,26 +1,10 @@
 <script setup lang="ts">
 import DepoimentCard from '../ui/DepoimentCard.vue'
-import wallacePhoto from '../../assets/wallace.webp'
 import maryPhoto from '../../assets/mary.webp'
 import julianaPhoto from '../../assets/juliana.webp'
 import felipePhoto from '../../assets/felipe.webp'
-import angeloMovie from '../../assets/angelo2.webm'
-import rudyPhoto from '../../assets/rudy.webp'
 
 const depoiments = [
-  {
-    name: 'Mary Bernstein',
-    photo: maryPhoto,
-    depoimento:
-      'São uns queridos, muito prestativos e trabalhadores, estão sempre dispostos a ajudar. Me atenderam e no mesmo dia já montaram minha dieta e plano de treino.',
-  },
-  {
-    name: 'Wallace Da Silva',
-    photo: wallacePhoto,
-    depoimento:
-      'Já passei por muitos profissionais da área, porém ninguém parou para me ouvir e entender o que eu queria, qual eram os meus limites. Foi quando cheguei até vocês. ' +
-      'Agradeço cada treino, programa alimentar e aconselhamento, continuem assim..',
-  },
   {
     name: 'Juliana Cristina',
     photo: julianaPhoto,
@@ -34,16 +18,10 @@ const depoiments = [
       'Sou suspeito para falar, mas a equipe é incrível! Sempre atenciosos e profissionais, me ajudaram a alcançar meus objetivos de forma eficiente. meu desempenho no boxe melhorou significativamente.',
   },
   {
-    name: 'Angelo Zandonai',
-    photo: angeloMovie,
+    name: 'Mary Bernstein',
+    photo: maryPhoto,
     depoimento:
-      'Depois que comecei o acompanhamento com a equipe, meu gás aumentou demais, estou rápido como um raio ⚡',
-  },
-  {
-    name: 'Rudy Cesar',
-    photo: rudyPhoto,
-    depoimento:
-      'A equipe é fantástica! Sempre dispostos a ajudar e com um conhecimento incrível. Recomendo de olhos fechados.',
+      'São uns queridos, muito prestativos e trabalhadores, estão sempre dispostos a ajudar. Me atenderam e no mesmo dia já montaram minha dieta e plano de treino.',
   },
 ]
 </script>
