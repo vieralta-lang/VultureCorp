@@ -12,16 +12,12 @@ import personalPhoto from '../../assets/personal1.webp'
         </span>
 
         <h1 class="max-w-xl font-heading text-5xl leading-[1.02] font-bold uppercase sm:text-6xl lg:text-7xl">
-          <span class="block text-accent">Transforme seu corpo</span>
-          <span class="mt-2 block text-white">com direção.</span>
+          <span class="block text-accent">Treino e nutrição</span>
+          <span class="mt-2 block text-white">personalizados para a sua rotina.</span>
         </h1>
 
-        <p class="mt-8 font-heading text-xl font-bold tracking-wide text-white uppercase sm:text-2xl">
-          Entre em contato conosco.
-        </p>
-
         <p class="mt-4 max-w-lg text-base leading-relaxed text-zinc-300 sm:text-lg">
-          Somos especialistas em Acompanhamento Nutricional e Treinamento Personalizado.
+          Acompanhamento online, orientação profissional e ajustes contínuos.
         </p>
 
         <div class="mt-12 flex w-full sm:w-auto">

@@ -9,7 +9,7 @@ export const routes: RouteRecordRaw[] = [
     // Carregado de forma eager (não lazy) por ser a rota inicial: evita um hop extra na cadeia de requisições críticas (CSS/JS separados)
     component: HomePage,
     meta: {
-      title: 'TNP Method | Consultoria Esportiva 100% Online de Elite',
+      title: 'TNP Method | Assessoria Esportiva 100% Online de Elite',
       description: defaultDescription,
     },
   },

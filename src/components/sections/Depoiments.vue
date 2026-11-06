@@ -23,7 +23,7 @@ const depoiments = [
     depoimento:
       'São uns queridos, muito prestativos e trabalhadores, estão sempre dispostos a ajudar. Me atenderam e no mesmo dia já montaram minha dieta e plano de treino.',
   },
-]
+    ]
 </script>
 
 <template>

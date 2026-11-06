@@ -14,7 +14,7 @@
       <div class="lg:order-1">
         <p class="text-sm font-semibold tracking-widest text-accent uppercase">Quem somos</p>
         <h2 class="mt-3 font-heading text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Construímos nossa própria tecnologia para não ser só mais uma consultoria.
+          Construímos nossa própria tecnologia para não ser só mais uma assessoria.
         </h2>
         <div class="mt-6 space-y-4 text-lg leading-relaxed text-zinc-400">
           <p>

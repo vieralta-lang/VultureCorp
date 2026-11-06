@@ -59,6 +59,24 @@ const faqs: QA[] = [
     ],
     download: true,
   },
+  {
+    question: 'Como funciona o pagamento?',
+    answer: [
+      [{ strong: 'O pagamento é feito online.' }, ' Aceitamos diversos métodos de pagamento, incluindo cartão de crédito, transferência bancária, pix e boleto.'],
+    ],
+  },
+  {
+    question: 'Aceitam pagamento com criptomoedas?',
+    answer: [
+      [{ strong: 'Sim.' }, 'Sim, aceitamos pagamentos com Bitcoin.'],
+    ],
+  },
+  {
+    question: 'Posso cancelar a qualquer momento?',
+    answer: [
+      [{ strong: 'Sim.' }, ' Você pode cancelar seu acompanhamento a qualquer momento, sem complicações.'],
+    ],
+  },
 ]
 </script>
 
