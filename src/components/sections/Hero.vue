@@ -32,12 +32,27 @@ import personalPhoto from '../../assets/personal1.webp'
       </div>
 
       <div class="relative mx-auto w-full max-w-md lg:max-w-none">
-        <div class="aspect-[4/5] w-full overflow-hidden rounded-3xl border border-white/10 shadow-2xl shadow-black/50">
+        <div class="aspect-[4/5] w-full overflow-hidden rounded-[2rem] border border-white/10 shadow-[0_30px_80px_rgba(0,0,0,0.55)]">
           <img :src="personalPhoto" alt="Guilherme Posanski, especialista da TNP" fetchpriority="high" class="h-full w-full object-cover object-top" />
         </div>
-        <div class="absolute -bottom-6 -left-6 hidden border border-accent/40 bg-zinc-950 px-6 py-4 sm:block">
-          <p class="font-heading text-2xl font-extrabold text-accent">100%</p>
-          <p class="text-xs text-zinc-400">Acompanhamento online</p>
+
+        <div class="absolute -bottom-5 left-0 hidden rounded-2xl border border-accent/30 bg-zinc-950/80 p-4 shadow-[0_18px_46px_rgba(0,0,0,0.4)] backdrop-blur-sm sm:block">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-3 w-3 rounded-full bg-accent shadow-[0_0_18px_rgba(244,114,182,0.9)]"></span>
+            <p class="font-heading text-xl font-black text-accent">100%</p>
+          </div>
+          <p class="mt-2 text-[10px] uppercase tracking-[0.22em] text-zinc-300">Online</p>
+        </div>
+
+        <div class="absolute -right-5 top-10 hidden rotate-3 animate-pulse rounded-2xl border border-white/10 bg-zinc-900/85 p-4 shadow-[0_18px_46px_rgba(0,0,0,0.38)] backdrop-blur-sm sm:block">
+          <span aria-hidden="true" class="absolute -left-3 -top-4 text-xl text-accent animate-ping">✦</span>
+          <span aria-hidden="true" class="absolute -right-3 -top-5 text-lg text-white animate-pulse">✧</span>
+          <span aria-hidden="true" class="absolute -bottom-4 left-3 text-lg text-accent animate-ping">✧</span>
+          <span aria-hidden="true" class="absolute -bottom-3 -right-4 text-xl text-white animate-pulse">✦</span>
+          <p class="font-heading text-base font-extrabold uppercase tracking-[0.14em] text-white">Ninguém tem o nosso preço.</p>
+          <p class="mt-2 max-w-[180px] text-[16px] leading-relaxed text-zinc-300">
+            O plano completo de treino e dieta mais barato do mercado está aqui. Quer o seu? Chama no zap! 🚀
+          </p>
         </div>
       </div>
     </div>
