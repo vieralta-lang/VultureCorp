@@ -44,7 +44,7 @@ import personalPhoto from '../../assets/personal1.webp'
           <p class="mt-2 text-[10px] uppercase tracking-[0.22em] text-zinc-300">Online</p>
         </div>
 
-        <div class="absolute -right-5 top-10 hidden rotate-3 animate-pulse rounded-2xl border border-white/10 bg-zinc-900/85 p-4 shadow-[0_18px_46px_rgba(0,0,0,0.38)] backdrop-blur-sm sm:block">
+        <div class="absolute -right-5 top-10 hidden rotate-3 animate-square-path rounded-2xl border border-white/10 bg-zinc-900/85 p-4 shadow-[0_18px_46px_rgba(0,0,0,0.38)] backdrop-blur-sm sm:block">
           <span aria-hidden="true" class="absolute -left-3 -top-4 text-xl text-accent animate-ping">✦</span>
           <span aria-hidden="true" class="absolute -right-3 -top-5 text-lg text-white animate-pulse">✧</span>
           <span aria-hidden="true" class="absolute -bottom-4 left-3 text-lg text-accent animate-ping">✧</span>
@@ -58,3 +58,25 @@ import personalPhoto from '../../assets/personal1.webp'
     </div>
   </section>
 </template>
+
+<style scoped>
+@keyframes square-path {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  25% {
+    translate: 0 48px;
+  }
+  50% {
+    translate: 48px 48px;
+  }
+  75% {
+    translate: 48px 0;
+  }
+}
+
+.animate-square-path {
+  animation: square-path 8s linear infinite;
+}
+</style>
